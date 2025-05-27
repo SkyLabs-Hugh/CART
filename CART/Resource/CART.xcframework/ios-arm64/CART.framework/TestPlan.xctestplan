@@ -1,0 +1,27 @@
+{
+  "configurations" : [
+    {
+      "id" : "8163AAE8-89A2-46BC-9F1B-2D0BE65721E9",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "UnitTests"
+      ],
+      "target" : {
+        "containerPath" : "container:SDKProject.xcodeproj",
+        "identifier" : "63B5E7B49898DF30F8626366",
+        "name" : "UnitTests"
+      }
+    }
+  ],
+  "version" : 1
+}

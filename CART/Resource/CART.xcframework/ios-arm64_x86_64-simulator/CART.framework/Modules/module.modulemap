@@ -1,0 +1,11 @@
+framework module CART {
+  umbrella header "CART.h"
+  export *
+
+  module * { export * }
+}
+
+module CART.Swift {
+  header "CART-Swift.h"
+  requires objc
+}
