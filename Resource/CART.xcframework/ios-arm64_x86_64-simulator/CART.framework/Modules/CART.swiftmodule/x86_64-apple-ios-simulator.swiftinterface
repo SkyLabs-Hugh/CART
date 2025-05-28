@@ -86,7 +86,7 @@ public struct ReadData {
   }
   public init(clientId: Swift.String, clientSecret: Swift.String, bleVersion: CART.CARTDefs.CARTProtocolVersion, cartListener: any CART.CARTListener)
   public func StartService()
-  public func setUserInfo(userKey: Swift.String, info: inout [Swift.String : Any?])
+  public func setUserInfo(userKey: Swift.String, info: inout [Swift.String : Any?], _ complete: ((_ success: Swift.Bool) -> Swift.Void)? = nil)
   @objc deinit
 }
 extension CART.CARTManager {
@@ -333,6 +333,7 @@ public enum CARTDefs {
     case CART_UPDATE_ERROR
     case CMD_RES_ERR
     case FAIL_GET_MACADDRESS
+    case API_ERROR
     public static func == (a: CART.CARTDefs.ErrorType, b: CART.CARTDefs.ErrorType) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {

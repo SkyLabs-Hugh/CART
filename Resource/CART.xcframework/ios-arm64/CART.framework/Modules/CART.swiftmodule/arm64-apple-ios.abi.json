@@ -2005,7 +2005,7 @@
           {
             "kind": "Function",
             "name": "setUserInfo",
-            "printedName": "setUserInfo(userKey:info:)",
+            "printedName": "setUserInfo(userKey:info:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2045,11 +2045,38 @@
                 ],
                 "paramValueOwnership": "InOut",
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:4CART11CARTManagerC11setUserInfo7userKey4infoySS_SDySSypSgGztF",
-            "mangledName": "$s4CART11CARTManagerC11setUserInfo7userKey4infoySS_SDySSypSgGztF",
+            "usr": "s:4CART11CARTManagerC11setUserInfo7userKey4info_ySS_SDySSypSgGzySbcSgtF",
+            "mangledName": "$s4CART11CARTManagerC11setUserInfo7userKey4info_ySS_SDySSypSgGzySbcSgtF",
             "moduleName": "CART",
             "declAttributes": [
               "AccessControl"
@@ -7867,6 +7894,43 @@
                 "moduleName": "CART"
               },
               {
+                "kind": "Var",
+                "name": "API_ERROR",
+                "printedName": "API_ERROR",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.ErrorType.Type) -> CART.CARTDefs.ErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErrorType",
+                        "printedName": "CART.CARTDefs.ErrorType",
+                        "usr": "s:4CART8CARTDefsO9ErrorTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.ErrorType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorType",
+                            "printedName": "CART.CARTDefs.ErrorType",
+                            "usr": "s:4CART8CARTDefsO9ErrorTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO9ErrorTypeO9API_ERRORyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO9ErrorTypeO9API_ERRORyA2EmF",
+                "moduleName": "CART"
+              },
+              {
                 "kind": "Function",
                 "name": "==",
                 "printedName": "==(_:_:)",
@@ -10470,6 +10534,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CART",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "CARTCalibrationResult",
         "printedName": "CARTCalibrationResult",
@@ -11400,63 +11474,70 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 326,
+      "offset": 322,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 381,
+      "offset": 377,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 892,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 513,
+      "offset": 2240,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 550,
+      "offset": 2431,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 770,
+      "offset": 2781,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 3825,
+      "offset": 5920,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 4194,
+      "offset": 6289,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 9663,
+      "offset": 11758,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 9687,
+      "offset": 11782,
       "length": 2,
       "value": "\"\""
     },
@@ -11491,28 +11572,28 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV2.swift",
       "kind": "StringLiteral",
-      "offset": 3599,
+      "offset": 3674,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV2.swift",
       "kind": "StringLiteral",
-      "offset": 3922,
+      "offset": 3997,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV2.swift",
       "kind": "StringLiteral",
-      "offset": 9063,
+      "offset": 9138,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV2.swift",
       "kind": "StringLiteral",
-      "offset": 9087,
+      "offset": 9162,
       "length": 2,
       "value": "\"\""
     },
@@ -15719,7 +15800,7 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/CARTManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9721,
+      "offset": 9919,
       "length": 5,
       "value": "false"
     },
