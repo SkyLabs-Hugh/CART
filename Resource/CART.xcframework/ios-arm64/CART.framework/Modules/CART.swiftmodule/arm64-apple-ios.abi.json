@@ -7710,6 +7710,43 @@
               },
               {
                 "kind": "Var",
+                "name": "RE_CONNECTED",
+                "printedName": "RE_CONNECTED",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.ErrorType.Type) -> CART.CARTDefs.ErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErrorType",
+                        "printedName": "CART.CARTDefs.ErrorType",
+                        "usr": "s:4CART8CARTDefsO9ErrorTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.ErrorType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorType",
+                            "printedName": "CART.CARTDefs.ErrorType",
+                            "usr": "s:4CART8CARTDefsO9ErrorTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO9ErrorTypeO12RE_CONNECTEDyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO9ErrorTypeO12RE_CONNECTEDyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
                 "name": "NOT_CONNECTED",
                 "printedName": "NOT_CONNECTED",
                 "children": [
@@ -11432,42 +11469,42 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "Array",
-      "offset": 1773,
+      "offset": 1887,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "StringLiteral",
-      "offset": 1839,
+      "offset": 1953,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2065,
+      "offset": 2179,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2397,
+      "offset": 2511,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "Array",
-      "offset": 15846,
+      "offset": 16369,
       "length": 6,
       "value": "[0x00]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 20360,
+      "offset": 20982,
       "length": 5,
       "value": "false"
     },
@@ -11516,28 +11553,28 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 5920,
+      "offset": 6302,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 6289,
+      "offset": 6671,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 11758,
+      "offset": 12140,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 11782,
+      "offset": 12164,
       "length": 2,
       "value": "\"\""
     },

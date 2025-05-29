@@ -328,6 +328,7 @@ public enum CARTDefs {
   public enum ErrorType {
     case NONE
     case NOT_REGISTERED
+    case RE_CONNECTED
     case NOT_CONNECTED
     case VERIFY_ERROR
     case CART_UPDATE_ERROR
