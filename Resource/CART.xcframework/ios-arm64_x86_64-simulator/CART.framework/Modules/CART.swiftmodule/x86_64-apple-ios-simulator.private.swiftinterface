@@ -55,6 +55,15 @@ extension CART.BLEBase {
   @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverServices error: (any Swift.Error)?)
   @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverCharacteristicsFor service: CoreBluetooth.CBService, error: (any Swift.Error)?)
 }
+public enum BizType {
+  case B2H
+  case B2C
+  public static func == (a: CART.BizType, b: CART.BizType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public enum CARTProtocol {
   public struct TYPE : Swift.Equatable {
     public static func == (a: CART.CARTProtocol.TYPE, b: CART.CARTProtocol.TYPE) -> Swift.Bool
@@ -80,11 +89,15 @@ public typealias DenormalPPGData = ((_ ppgData: [CART.CARTDataType : [Swift.Doub
 public typealias NormalPPGData = ((_ ppgData: [CART.CARTDataType : [Swift.Double]]) -> Swift.Void)?
 public struct ReadData {
 }
+public struct CARTCmdResult {
+  public var success: Swift.Bool
+  public var errorType: CART.CmdErrorType?
+}
 @objc(CARTManager) public class CARTManager : ObjectiveC.NSObject {
   @objc(shared) public static var shared: CART.CARTManager! {
     get
   }
-  public init(clientId: Swift.String, clientSecret: Swift.String, bleVersion: CART.CARTDefs.CARTProtocolVersion, cartListener: any CART.CARTListener)
+  public init(clientId: Swift.String, clientSecret: Swift.String, bleVersion: CART.CARTDefs.CARTProtocolVersion, cartListener: any CART.CARTListener, bizType: CART.BizType = .B2H)
   public func StartService()
   public func setUserInfo(userKey: Swift.String, info: inout [Swift.String : Any?], _ complete: ((_ success: Swift.Bool) -> Swift.Void)? = nil)
   @objc deinit
@@ -100,10 +113,9 @@ extension CART.CARTManager {
   public func scanStop()
 }
 extension CART.CARTManager {
-  public func connect(identifier: Swift.String)
-  public func connect(serialId: Swift.String)
-  public func connect(macAddress: Swift.String)
-  public func connect(cartName: Swift.String)
+  public func connect(serialId: Swift.String, isReg: Swift.Bool)
+  public func connect(macAddress: Swift.String, isReg: Swift.Bool)
+  public func connect(cartName: Swift.String, isReg: Swift.Bool)
   public func disConnect()
 }
 extension CART.CARTManager {
@@ -159,11 +171,32 @@ public protocol CARTCalibrationListener {
   func stop()
   func realTimePPG(ppgData: [Swift.Double])
 }
+public enum CmdErrorType : Swift.Int {
+  case NONE
+  case ERROR
+  case DATA_NONE
+  case CMD_RES_ERR
+  case API_ERROR
+  case HTTP_ERROR
+  case ERROR_CODE
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol CARTCmdListener {
+  func result(result: CART.CARTCmdResult)
+}
 public enum ISSErrorType : Swift.Int {
   case NONE
   case WD_ERROR
   case ERROR
+  case BATTERY_CHARGING
+  case BATTERY_TIMEOUT
   case CMD_RES_ERR
+  case API_ERROR
+  case HTTP_ERROR
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -173,7 +206,6 @@ public enum ISSErrorType : Swift.Int {
 public protocol CARTISSListener {
   func progress(position: Swift.Double)
   func result(result: CART.CARTIssResult)
-  func stop()
 }
 public protocol CARTListener {
   func bleConnectStatus(status: CART.CARTDefs.ConnectStatus)
@@ -443,11 +475,16 @@ public struct CARTIssResult {
   }
   @objc deinit
 }
+extension CART.BizType : Swift.Equatable {}
+extension CART.BizType : Swift.Hashable {}
 extension CART.DataControlStatus : Swift.Equatable {}
 extension CART.DataControlStatus : Swift.Hashable {}
 extension CART.CalErrorType : Swift.Equatable {}
 extension CART.CalErrorType : Swift.Hashable {}
 extension CART.CalErrorType : Swift.RawRepresentable {}
+extension CART.CmdErrorType : Swift.Equatable {}
+extension CART.CmdErrorType : Swift.Hashable {}
+extension CART.CmdErrorType : Swift.RawRepresentable {}
 extension CART.ISSErrorType : Swift.Equatable {}
 extension CART.ISSErrorType : Swift.Hashable {}
 extension CART.ISSErrorType : Swift.RawRepresentable {}

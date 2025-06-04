@@ -1186,8 +1186,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
         "declKind": "Import",
         "moduleName": "CART",
         "declAttributes": [
@@ -1195,20 +1195,217 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "CART"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreBluetooth",
-        "printedName": "CoreBluetooth",
-        "declKind": "Import",
+        "kind": "TypeDecl",
+        "name": "BizType",
+        "printedName": "BizType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "B2H",
+            "printedName": "B2H",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.BizType.Type) -> CART.BizType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BizType",
+                    "printedName": "CART.BizType",
+                    "usr": "s:4CART7BizTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.BizType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BizType",
+                        "printedName": "CART.BizType",
+                        "usr": "s:4CART7BizTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART7BizTypeO3B2HyA2CmF",
+            "mangledName": "$s4CART7BizTypeO3B2HyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Var",
+            "name": "B2C",
+            "printedName": "B2C",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.BizType.Type) -> CART.BizType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BizType",
+                    "printedName": "CART.BizType",
+                    "usr": "s:4CART7BizTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.BizType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BizType",
+                        "printedName": "CART.BizType",
+                        "usr": "s:4CART7BizTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART7BizTypeO3B2CyA2CmF",
+            "mangledName": "$s4CART7BizTypeO3B2CyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BizType",
+                "printedName": "CART.BizType",
+                "usr": "s:4CART7BizTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BizType",
+                "printedName": "CART.BizType",
+                "usr": "s:4CART7BizTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4CART7BizTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s4CART7BizTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "CART",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4CART7BizTypeO9hashValueSivp",
+            "mangledName": "$s4CART7BizTypeO9hashValueSivp",
+            "moduleName": "CART",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4CART7BizTypeO9hashValueSivg",
+                "mangledName": "$s4CART7BizTypeO9hashValueSivg",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4CART7BizTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s4CART7BizTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "CART",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:4CART7BizTypeO",
+        "mangledName": "$s4CART7BizTypeO",
         "moduleName": "CART",
         "declAttributes": [
-          "RawDocComment"
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
         ]
       },
       {
@@ -1318,36 +1515,6 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CART",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CART",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CART",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -1791,6 +1958,232 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "CARTCmdResult",
+        "printedName": "CARTCmdResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4CART13CARTCmdResultV7successSbvp",
+            "mangledName": "$s4CART13CARTCmdResultV7successSbvp",
+            "moduleName": "CART",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4CART13CARTCmdResultV7successSbvg",
+                "mangledName": "$s4CART13CARTCmdResultV7successSbvg",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4CART13CARTCmdResultV7successSbvs",
+                "mangledName": "$s4CART13CARTCmdResultV7successSbvs",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4CART13CARTCmdResultV7successSbvM",
+                "mangledName": "$s4CART13CARTCmdResultV7successSbvM",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorType",
+            "printedName": "errorType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CART.CmdErrorType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmdErrorType",
+                    "printedName": "CART.CmdErrorType",
+                    "usr": "s:4CART12CmdErrorTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4CART13CARTCmdResultV9errorTypeAA08CmdErrorE0OSgvp",
+            "mangledName": "$s4CART13CARTCmdResultV9errorTypeAA08CmdErrorE0OSgvp",
+            "moduleName": "CART",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CART.CmdErrorType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmdErrorType",
+                        "printedName": "CART.CmdErrorType",
+                        "usr": "s:4CART12CmdErrorTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4CART13CARTCmdResultV9errorTypeAA08CmdErrorE0OSgvg",
+                "mangledName": "$s4CART13CARTCmdResultV9errorTypeAA08CmdErrorE0OSgvg",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CART.CmdErrorType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmdErrorType",
+                        "printedName": "CART.CmdErrorType",
+                        "usr": "s:4CART12CmdErrorTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4CART13CARTCmdResultV9errorTypeAA08CmdErrorE0OSgvs",
+                "mangledName": "$s4CART13CARTCmdResultV9errorTypeAA08CmdErrorE0OSgvs",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4CART13CARTCmdResultV9errorTypeAA08CmdErrorE0OSgvM",
+                "mangledName": "$s4CART13CARTCmdResultV9errorTypeAA08CmdErrorE0OSgvM",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:4CART13CARTCmdResultV",
+        "mangledName": "$s4CART13CARTCmdResultV",
+        "moduleName": "CART",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "DatadogCore",
         "printedName": "DatadogCore",
@@ -1940,7 +2333,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(clientId:clientSecret:bleVersion:cartListener:)",
+            "printedName": "init(clientId:clientSecret:bleVersion:cartListener:bizType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1971,11 +2364,18 @@
                 "name": "CARTListener",
                 "printedName": "any CART.CARTListener",
                 "usr": "s:4CART12CARTListenerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BizType",
+                "printedName": "CART.BizType",
+                "hasDefaultArg": true,
+                "usr": "s:4CART7BizTypeO"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:4CART11CARTManagerC8clientId0C6Secret10bleVersion12cartListenerACSS_SSAA8CARTDefsO012CARTProtocolG0OAA12CARTListener_ptcfc",
-            "mangledName": "$s4CART11CARTManagerC8clientId0C6Secret10bleVersion12cartListenerACSS_SSAA8CARTDefsO012CARTProtocolG0OAA12CARTListener_ptcfc",
+            "usr": "s:4CART11CARTManagerC8clientId0C6Secret10bleVersion12cartListener7bizTypeACSS_SSAA8CARTDefsO012CARTProtocolG0OAA12CARTListener_pAA03BizK0Otcfc",
+            "mangledName": "$s4CART11CARTManagerC8clientId0C6Secret10bleVersion12cartListener7bizTypeACSS_SSAA8CARTDefsO012CARTProtocolG0OAA12CARTListener_pAA03BizK0Otcfc",
             "moduleName": "CART",
             "declAttributes": [
               "AccessControl"
@@ -2281,7 +2681,7 @@
           {
             "kind": "Function",
             "name": "connect",
-            "printedName": "connect(identifier:)",
+            "printedName": "connect(serialId:isReg:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2293,11 +2693,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:4CART11CARTManagerC7connect10identifierySS_tF",
-            "mangledName": "$s4CART11CARTManagerC7connect10identifierySS_tF",
+            "usr": "s:4CART11CARTManagerC7connect8serialId5isRegySS_SbtF",
+            "mangledName": "$s4CART11CARTManagerC7connect8serialId5isRegySS_SbtF",
             "moduleName": "CART",
             "declAttributes": [
               "RawDocComment"
@@ -2308,7 +2714,7 @@
           {
             "kind": "Function",
             "name": "connect",
-            "printedName": "connect(serialId:)",
+            "printedName": "connect(macAddress:isReg:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2320,11 +2726,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:4CART11CARTManagerC7connect8serialIdySS_tF",
-            "mangledName": "$s4CART11CARTManagerC7connect8serialIdySS_tF",
+            "usr": "s:4CART11CARTManagerC7connect10macAddress5isRegySS_SbtF",
+            "mangledName": "$s4CART11CARTManagerC7connect10macAddress5isRegySS_SbtF",
             "moduleName": "CART",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -2332,7 +2744,7 @@
           {
             "kind": "Function",
             "name": "connect",
-            "printedName": "connect(macAddress:)",
+            "printedName": "connect(cartName:isReg:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2344,35 +2756,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4CART11CARTManagerC7connect10macAddressySS_tF",
-            "mangledName": "$s4CART11CARTManagerC7connect10macAddressySS_tF",
-            "moduleName": "CART",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "connect",
-            "printedName": "connect(cartName:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:4CART11CARTManagerC7connect8cartNameySS_tF",
-            "mangledName": "$s4CART11CARTManagerC7connect8cartNameySS_tF",
+            "usr": "s:4CART11CARTManagerC7connect8cartName5isRegySS_SbtF",
+            "mangledName": "$s4CART11CARTManagerC7connect8cartName5isRegySS_SbtF",
             "moduleName": "CART",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -3366,6 +3760,462 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "CmdErrorType",
+        "printedName": "CmdErrorType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "NONE",
+            "printedName": "NONE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.CmdErrorType.Type) -> CART.CmdErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmdErrorType",
+                    "printedName": "CART.CmdErrorType",
+                    "usr": "s:4CART12CmdErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.CmdErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmdErrorType",
+                        "printedName": "CART.CmdErrorType",
+                        "usr": "s:4CART12CmdErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART12CmdErrorTypeO4NONEyA2CmF",
+            "mangledName": "$s4CART12CmdErrorTypeO4NONEyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Var",
+            "name": "ERROR",
+            "printedName": "ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.CmdErrorType.Type) -> CART.CmdErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmdErrorType",
+                    "printedName": "CART.CmdErrorType",
+                    "usr": "s:4CART12CmdErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.CmdErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmdErrorType",
+                        "printedName": "CART.CmdErrorType",
+                        "usr": "s:4CART12CmdErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART12CmdErrorTypeO5ERRORyA2CmF",
+            "mangledName": "$s4CART12CmdErrorTypeO5ERRORyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Var",
+            "name": "DATA_NONE",
+            "printedName": "DATA_NONE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.CmdErrorType.Type) -> CART.CmdErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmdErrorType",
+                    "printedName": "CART.CmdErrorType",
+                    "usr": "s:4CART12CmdErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.CmdErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmdErrorType",
+                        "printedName": "CART.CmdErrorType",
+                        "usr": "s:4CART12CmdErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART12CmdErrorTypeO9DATA_NONEyA2CmF",
+            "mangledName": "$s4CART12CmdErrorTypeO9DATA_NONEyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Var",
+            "name": "CMD_RES_ERR",
+            "printedName": "CMD_RES_ERR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.CmdErrorType.Type) -> CART.CmdErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmdErrorType",
+                    "printedName": "CART.CmdErrorType",
+                    "usr": "s:4CART12CmdErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.CmdErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmdErrorType",
+                        "printedName": "CART.CmdErrorType",
+                        "usr": "s:4CART12CmdErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART12CmdErrorTypeO11CMD_RES_ERRyA2CmF",
+            "mangledName": "$s4CART12CmdErrorTypeO11CMD_RES_ERRyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Var",
+            "name": "API_ERROR",
+            "printedName": "API_ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.CmdErrorType.Type) -> CART.CmdErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmdErrorType",
+                    "printedName": "CART.CmdErrorType",
+                    "usr": "s:4CART12CmdErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.CmdErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmdErrorType",
+                        "printedName": "CART.CmdErrorType",
+                        "usr": "s:4CART12CmdErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART12CmdErrorTypeO9API_ERRORyA2CmF",
+            "mangledName": "$s4CART12CmdErrorTypeO9API_ERRORyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Var",
+            "name": "HTTP_ERROR",
+            "printedName": "HTTP_ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.CmdErrorType.Type) -> CART.CmdErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmdErrorType",
+                    "printedName": "CART.CmdErrorType",
+                    "usr": "s:4CART12CmdErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.CmdErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmdErrorType",
+                        "printedName": "CART.CmdErrorType",
+                        "usr": "s:4CART12CmdErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART12CmdErrorTypeO10HTTP_ERRORyA2CmF",
+            "mangledName": "$s4CART12CmdErrorTypeO10HTTP_ERRORyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Var",
+            "name": "ERROR_CODE",
+            "printedName": "ERROR_CODE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.CmdErrorType.Type) -> CART.CmdErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmdErrorType",
+                    "printedName": "CART.CmdErrorType",
+                    "usr": "s:4CART12CmdErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.CmdErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmdErrorType",
+                        "printedName": "CART.CmdErrorType",
+                        "usr": "s:4CART12CmdErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART12CmdErrorTypeO10ERROR_CODEyA2CmF",
+            "mangledName": "$s4CART12CmdErrorTypeO10ERROR_CODEyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CART.CmdErrorType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmdErrorType",
+                    "printedName": "CART.CmdErrorType",
+                    "usr": "s:4CART12CmdErrorTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4CART12CmdErrorTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s4CART12CmdErrorTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "CART",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4CART12CmdErrorTypeO8rawValueSivp",
+            "mangledName": "$s4CART12CmdErrorTypeO8rawValueSivp",
+            "moduleName": "CART",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4CART12CmdErrorTypeO8rawValueSivg",
+                "mangledName": "$s4CART12CmdErrorTypeO8rawValueSivg",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:4CART12CmdErrorTypeO",
+        "mangledName": "$s4CART12CmdErrorTypeO",
+        "moduleName": "CART",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CARTCmdListener",
+        "printedName": "CARTCmdListener",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "result",
+            "printedName": "result(result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CARTCmdResult",
+                "printedName": "CART.CARTCmdResult",
+                "usr": "s:4CART13CARTCmdResultV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4CART15CARTCmdListenerP6resultADyAA0B6ResultV_tF",
+            "mangledName": "$s4CART15CARTCmdListenerP6resultADyAA0B6ResultV_tF",
+            "moduleName": "CART",
+            "genericSig": "<τ_0_0 where τ_0_0 : CART.CARTCmdListener>",
+            "sugared_genericSig": "<Self where Self : CART.CARTCmdListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:4CART15CARTCmdListenerP",
+        "mangledName": "$s4CART15CARTCmdListenerP",
+        "moduleName": "CART",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "ISSErrorType",
         "printedName": "ISSErrorType",
         "children": [
@@ -3482,6 +4332,80 @@
           },
           {
             "kind": "Var",
+            "name": "BATTERY_CHARGING",
+            "printedName": "BATTERY_CHARGING",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.ISSErrorType.Type) -> CART.ISSErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ISSErrorType",
+                    "printedName": "CART.ISSErrorType",
+                    "usr": "s:4CART12ISSErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.ISSErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ISSErrorType",
+                        "printedName": "CART.ISSErrorType",
+                        "usr": "s:4CART12ISSErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART12ISSErrorTypeO16BATTERY_CHARGINGyA2CmF",
+            "mangledName": "$s4CART12ISSErrorTypeO16BATTERY_CHARGINGyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Var",
+            "name": "BATTERY_TIMEOUT",
+            "printedName": "BATTERY_TIMEOUT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.ISSErrorType.Type) -> CART.ISSErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ISSErrorType",
+                    "printedName": "CART.ISSErrorType",
+                    "usr": "s:4CART12ISSErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.ISSErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ISSErrorType",
+                        "printedName": "CART.ISSErrorType",
+                        "usr": "s:4CART12ISSErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART12ISSErrorTypeO15BATTERY_TIMEOUTyA2CmF",
+            "mangledName": "$s4CART12ISSErrorTypeO15BATTERY_TIMEOUTyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Var",
             "name": "CMD_RES_ERR",
             "printedName": "CMD_RES_ERR",
             "children": [
@@ -3515,6 +4439,80 @@
             "declKind": "EnumElement",
             "usr": "s:4CART12ISSErrorTypeO11CMD_RES_ERRyA2CmF",
             "mangledName": "$s4CART12ISSErrorTypeO11CMD_RES_ERRyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Var",
+            "name": "API_ERROR",
+            "printedName": "API_ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.ISSErrorType.Type) -> CART.ISSErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ISSErrorType",
+                    "printedName": "CART.ISSErrorType",
+                    "usr": "s:4CART12ISSErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.ISSErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ISSErrorType",
+                        "printedName": "CART.ISSErrorType",
+                        "usr": "s:4CART12ISSErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART12ISSErrorTypeO9API_ERRORyA2CmF",
+            "mangledName": "$s4CART12ISSErrorTypeO9API_ERRORyA2CmF",
+            "moduleName": "CART"
+          },
+          {
+            "kind": "Var",
+            "name": "HTTP_ERROR",
+            "printedName": "HTTP_ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CART.ISSErrorType.Type) -> CART.ISSErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ISSErrorType",
+                    "printedName": "CART.ISSErrorType",
+                    "usr": "s:4CART12ISSErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CART.ISSErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ISSErrorType",
+                        "printedName": "CART.ISSErrorType",
+                        "usr": "s:4CART12ISSErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4CART12ISSErrorTypeO10HTTP_ERRORyA2CmF",
+            "mangledName": "$s4CART12ISSErrorTypeO10HTTP_ERRORyA2CmF",
             "moduleName": "CART"
           },
           {
@@ -3704,27 +4702,6 @@
             "declKind": "Func",
             "usr": "s:4CART15CARTISSListenerP6resultADyAA13CARTIssResultV_tF",
             "mangledName": "$s4CART15CARTISSListenerP6resultADyAA13CARTIssResultV_tF",
-            "moduleName": "CART",
-            "genericSig": "<τ_0_0 where τ_0_0 : CART.CARTISSListener>",
-            "sugared_genericSig": "<Self where Self : CART.CARTISSListener>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stop",
-            "printedName": "stop()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4CART15CARTISSListenerP4stopyyF",
-            "mangledName": "$s4CART15CARTISSListenerP4stopyyF",
             "moduleName": "CART",
             "genericSig": "<τ_0_0 where τ_0_0 : CART.CARTISSListener>",
             "sugared_genericSig": "<Self where Self : CART.CARTISSListener>",
@@ -11469,168 +12446,168 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "Array",
-      "offset": 1887,
+      "offset": 1880,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "StringLiteral",
-      "offset": 1953,
+      "offset": 1946,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2179,
+      "offset": 2162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2511,
+      "offset": 2438,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "Array",
-      "offset": 16369,
+      "offset": 16300,
       "length": 6,
       "value": "[0x00]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 20982,
+      "offset": 20913,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 322,
+      "offset": 321,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 377,
+      "offset": 376,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 892,
+      "offset": 891,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 2240,
+      "offset": 2762,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 2431,
+      "offset": 2953,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 2781,
+      "offset": 3540,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 6302,
+      "offset": 7156,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 6671,
+      "offset": 7669,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 12140,
+      "offset": 15434,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 12164,
+      "offset": 15458,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV2.swift",
       "kind": "IntegerLiteral",
-      "offset": 368,
+      "offset": 620,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV2.swift",
       "kind": "StringLiteral",
-      "offset": 423,
+      "offset": 675,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV2.swift",
       "kind": "BooleanLiteral",
-      "offset": 453,
+      "offset": 705,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV2.swift",
       "kind": "BooleanLiteral",
-      "offset": 673,
+      "offset": 925,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV2.swift",
       "kind": "StringLiteral",
-      "offset": 3674,
+      "offset": 4103,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV2.swift",
       "kind": "StringLiteral",
-      "offset": 3997,
+      "offset": 4616,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV2.swift",
       "kind": "StringLiteral",
-      "offset": 9138,
+      "offset": 10228,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV2.swift",
       "kind": "StringLiteral",
-      "offset": 9162,
+      "offset": 10252,
       "length": 2,
       "value": "\"\""
     },
@@ -14120,545 +15097,6 @@
       "value": "0xFF"
     },
     {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "Array",
-      "offset": 376,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "Array",
-      "offset": 407,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "Array",
-      "offset": 445,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "Array",
-      "offset": 478,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "IntegerLiteral",
-      "offset": 511,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "StringLiteral",
-      "offset": 542,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "IntegerLiteral",
-      "offset": 587,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "IntegerLiteral",
-      "offset": 625,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "Array",
-      "offset": 667,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "BooleanLiteral",
-      "offset": 696,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7055,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "Array",
-      "offset": 7138,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "Array",
-      "offset": 7166,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7197,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "StringLiteral",
-      "offset": 7223,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7264,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7303,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7675,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "Array",
-      "offset": 7761,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/BackgroundBP.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8005,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTBackgroundBP.swift",
-      "kind": "Array",
-      "offset": 1293,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTBackgroundBP.swift",
-      "kind": "Array",
-      "offset": 1324,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTBackgroundBP.swift",
-      "kind": "Array",
-      "offset": 1362,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTBackgroundBP.swift",
-      "kind": "Array",
-      "offset": 1395,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTBackgroundBP.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1428,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTBackgroundBP.swift",
-      "kind": "StringLiteral",
-      "offset": 1459,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTBackgroundBP.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1500,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTBackgroundBP.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1538,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTEventLogData.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4425,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTEventLogData.swift",
-      "kind": "Array",
-      "offset": 4519,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTLoginData.swift",
-      "kind": "Array",
-      "offset": 146,
-      "length": 36,
-      "value": "[0x15, 0xA9, 0xB8, 0x19, 0xC5, 0x3D]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTLoginData.swift",
-      "kind": "Array",
-      "offset": 210,
-      "length": 36,
-      "value": "[0x15, 0xA9, 0xB8, 0x19, 0xC5, 0x3D]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTLoginData.swift",
-      "kind": "Array",
-      "offset": 275,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTLoginData.swift",
-      "kind": "StringLiteral",
-      "offset": 523,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/CARTLoginData.swift",
-      "kind": "StringLiteral",
-      "offset": 547,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "BooleanLiteral",
-      "offset": 331,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "Array",
-      "offset": 368,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "Array",
-      "offset": 402,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "Array",
-      "offset": 434,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "Array",
-      "offset": 479,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "Array",
-      "offset": 519,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "IntegerLiteral",
-      "offset": 547,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "IntegerLiteral",
-      "offset": 583,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "IntegerLiteral",
-      "offset": 612,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "IntegerLiteral",
-      "offset": 643,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "Array",
-      "offset": 685,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9555,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "Array",
-      "offset": 9640,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "Array",
-      "offset": 9675,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "Array",
-      "offset": 9708,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "Array",
-      "offset": 9749,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9773,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10116,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Calibration40s.swift",
-      "kind": "Array",
-      "offset": 10202,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 157,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 244,
-      "length": 5,
-      "value": "[0.0]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 258,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 301,
-      "length": 5,
-      "value": "[0.0]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 315,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 361,
-      "length": 5,
-      "value": "[0.0]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 375,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 419,
-      "length": 5,
-      "value": "[0.0]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 433,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 479,
-      "length": 5,
-      "value": "[0.0]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 493,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 540,
-      "length": 5,
-      "value": "[0.0]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 554,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1023,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 1054,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1084,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "FloatLiteral",
-      "offset": 1110,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1186,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14349,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 14434,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "Dictionary",
-      "offset": 14484,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "Dictionary",
-      "offset": 14538,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/InitialSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14565,
-      "length": 1,
-      "value": "0"
-    },
-    {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/Packet\/CalibrationDataPacket.swift",
       "kind": "IntegerLiteral",
       "offset": 1918,
@@ -14729,252 +15167,133 @@
       "value": "0x09"
     },
     {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 142,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 175,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 223,
-      "length": 5,
-      "value": "[0.0]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 237,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 280,
-      "length": 5,
-      "value": "[0.0]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 294,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 340,
-      "length": 5,
-      "value": "[0.0]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 354,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 398,
-      "length": 5,
-      "value": "[0.0]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 412,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 458,
-      "length": 5,
-      "value": "[0.0]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 472,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 519,
-      "length": 5,
-      "value": "[0.0]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 533,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 999,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "Array",
-      "offset": 1074,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1105,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Old\/PeriodicSensorSettingSPO2.swift",
-      "kind": "FloatLiteral",
-      "offset": 1181,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTB05CStatusV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 334,
+      "offset": 327,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTB05CStatusV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 401,
+      "offset": 394,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTB05HStatusV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 334,
+      "offset": 327,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTB05HStatusV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 401,
+      "offset": 394,
       "length": 1,
       "value": "0"
     },
     {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBGCStartV1.swift",
+      "kind": "BooleanLiteral",
+      "offset": 301,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBGCStopV1.swift",
+      "kind": "BooleanLiteral",
+      "offset": 300,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBackgroundBPPacketV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 358,
+      "offset": 351,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBackgroundBPPacketV1.swift",
       "kind": "Array",
-      "offset": 432,
+      "offset": 425,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBackgroundBPPacketV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 910,
+      "offset": 903,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBackgroundBPPacketV1.swift",
       "kind": "Array",
-      "offset": 1097,
+      "offset": 1090,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBackgroundBPPacketV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1121,
+      "offset": 1114,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBackgroundBPV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 494,
+      "offset": 487,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBackgroundBPV1.swift",
       "kind": "Array",
-      "offset": 564,
+      "offset": 557,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBackgroundBPV1.swift",
       "kind": "Array",
-      "offset": 592,
+      "offset": 585,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBackgroundBPV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 623,
+      "offset": 616,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBackgroundBPV1.swift",
       "kind": "StringLiteral",
-      "offset": 649,
+      "offset": 642,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBackgroundBPV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 690,
+      "offset": 683,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBackgroundBPV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 729,
+      "offset": 722,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBatteryStatusV1.swift",
-      "kind": "BooleanLiteral",
-      "offset": 367,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "BooleanLiteral",
       "offset": 360,
       "length": 4,
@@ -14982,533 +15301,540 @@
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
+      "kind": "BooleanLiteral",
+      "offset": 353,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "Array",
-      "offset": 449,
+      "offset": 442,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "Array",
-      "offset": 816,
+      "offset": 809,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "Array",
-      "offset": 850,
+      "offset": 843,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "Array",
-      "offset": 882,
+      "offset": 875,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "Array",
-      "offset": 927,
+      "offset": 920,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "Array",
-      "offset": 967,
+      "offset": 960,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 995,
+      "offset": 988,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1031,
+      "offset": 1024,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1060,
+      "offset": 1053,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1091,
+      "offset": 1084,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "Array",
-      "offset": 1129,
+      "offset": 1122,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "Array",
-      "offset": 1749,
+      "offset": 1742,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 472,
+      "offset": 465,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "Array",
-      "offset": 560,
+      "offset": 553,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "Array",
-      "offset": 595,
+      "offset": 588,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "Array",
-      "offset": 628,
+      "offset": 621,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "Array",
-      "offset": 669,
+      "offset": 662,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 693,
+      "offset": 686,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "Array",
-      "offset": 1288,
+      "offset": 1281,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "Array",
-      "offset": 1322,
+      "offset": 1315,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "Array",
-      "offset": 1354,
+      "offset": 1347,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "Array",
-      "offset": 1399,
+      "offset": 1392,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "Array",
-      "offset": 1439,
+      "offset": 1432,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1467,
+      "offset": 1460,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1503,
+      "offset": 1496,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1532,
+      "offset": 1525,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1563,
+      "offset": 1556,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTEventLogDataV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 337,
+      "offset": 330,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTEventLogDataV1.swift",
       "kind": "Array",
-      "offset": 414,
+      "offset": 407,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTEventLogDataV1.swift",
       "kind": "Array",
-      "offset": 1292,
+      "offset": 1285,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTInitialSensorSettingV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 355,
+      "offset": 348,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTInitialSensorSettingV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 423,
+      "offset": 416,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTInitialSensorSettingV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 795,
+      "offset": 788,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTInitialSensorSettingV1.swift",
       "kind": "FloatLiteral",
-      "offset": 824,
+      "offset": 817,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTInitialSensorSettingV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 864,
+      "offset": 857,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTInitialSensorSettingV1.swift",
       "kind": "Array",
-      "offset": 906,
+      "offset": 899,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTLoginDataV1.swift",
       "kind": "Array",
-      "offset": 211,
+      "offset": 204,
       "length": 36,
       "value": "[0x15, 0xA9, 0xB8, 0x19, 0xC5, 0x3D]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTLoginDataV1.swift",
       "kind": "Array",
-      "offset": 279,
+      "offset": 272,
       "length": 36,
       "value": "[0x15, 0xA9, 0xB8, 0x19, 0xC5, 0x3D]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTLoginDataV1.swift",
       "kind": "Array",
-      "offset": 348,
+      "offset": 341,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTLoginDataV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 698,
+      "offset": 691,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTLoginDataV1.swift",
       "kind": "StringLiteral",
-      "offset": 1076,
+      "offset": 1069,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTLoginDataV1.swift",
       "kind": "StringLiteral",
-      "offset": 1100,
+      "offset": 1093,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTLoginDataV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1177,
+      "offset": 1170,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 528,
+      "offset": 521,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 556,
+      "offset": 549,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "Array",
-      "offset": 629,
+      "offset": 622,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 779,
+      "offset": 772,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "Array",
-      "offset": 1484,
+      "offset": 1477,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1495,
+      "offset": 1488,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "Array",
-      "offset": 1533,
+      "offset": 1526,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1544,
+      "offset": 1537,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "Array",
-      "offset": 1587,
+      "offset": 1580,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1598,
+      "offset": 1591,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "Array",
-      "offset": 1639,
+      "offset": 1632,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1650,
+      "offset": 1643,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "Array",
-      "offset": 1769,
+      "offset": 1762,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1780,
+      "offset": 1773,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "Array",
-      "offset": 1823,
+      "offset": 1816,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1834,
+      "offset": 1827,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "Array",
-      "offset": 1881,
+      "offset": 1874,
       "length": 33,
       "value": "[2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "IntegerLiteral",
-      "offset": 1950,
+      "offset": 1943,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "FloatLiteral",
-      "offset": 2045,
+      "offset": 2038,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTPeriodicSensorSettingV1.swift",
       "kind": "Array",
-      "offset": 2087,
+      "offset": 2080,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTSystemStatusV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 345,
+      "offset": 338,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 3581,
+      "offset": 2217,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "Array",
-      "offset": 3610,
+      "offset": 2246,
       "length": 6,
       "value": "[0x00]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 3638,
+      "offset": 2274,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 3664,
+      "offset": 2300,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 4344,
+      "offset": 2980,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "Array",
-      "offset": 4373,
+      "offset": 3009,
       "length": 6,
       "value": "[0x00]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 4401,
+      "offset": 3037,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 4427,
+      "offset": 3063,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 6436,
+      "offset": 5072,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "Array",
-      "offset": 6465,
+      "offset": 5101,
       "length": 6,
       "value": "[0x00]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 6493,
+      "offset": 5129,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 6519,
+      "offset": 5155,
       "length": 4,
       "value": "0x00"
     },
@@ -15766,22 +16092,29 @@
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/DataSource\/Local\/CARTPrefs.swift",
+      "kind": "BooleanLiteral",
+      "offset": 468,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/DataSource\/Local\/CARTPrefs.swift",
       "kind": "StringLiteral",
-      "offset": 417,
+      "offset": 514,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/DataSource\/Local\/CARTPrefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 457,
+      "offset": 554,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/DataSource\/Local\/CARTPrefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 558,
+      "offset": 655,
       "length": 1,
       "value": "0"
     },
@@ -15837,7 +16170,7 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/CARTManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9919,
+      "offset": 10097,
       "length": 5,
       "value": "false"
     },
@@ -15863,6 +16196,55 @@
       "value": "10"
     },
     {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTCmdListener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 129,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTCmdListener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 148,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTCmdListener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 171,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTCmdListener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 196,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTCmdListener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 220,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTCmdListener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 245,
+      "length": 2,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTCmdListener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 270,
+      "length": 2,
+      "value": "22"
+    },
+    {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTISSListener.swift",
       "kind": "IntegerLiteral",
       "offset": 136,
@@ -15886,9 +16268,37 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTISSListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 202,
+      "offset": 207,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTISSListener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 236,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTISSListener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 261,
       "length": 2,
       "value": "10"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTISSListener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 285,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTISSListener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 310,
+      "length": 2,
+      "value": "21"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Manager\/Listener\/CARTPSSListener.swift",
