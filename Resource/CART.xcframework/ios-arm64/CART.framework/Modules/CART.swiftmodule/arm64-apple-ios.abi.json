@@ -3646,8 +3646,211 @@
           },
           {
             "kind": "Function",
+            "name": "realTime",
+            "printedName": "realTime(data:time:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Double]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4CART23CARTCalibrationListenerP8realTime4data4timeySaySdG_SitF",
+            "mangledName": "$s4CART23CARTCalibrationListenerP8realTime4data4timeySaySdG_SitF",
+            "moduleName": "CART",
+            "genericSig": "<τ_0_0 where τ_0_0 : CART.CARTCalibrationListener>",
+            "sugared_genericSig": "<Self where Self : CART.CARTCalibrationListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "userConfirm",
+            "printedName": "userConfirm(callbackCuff:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Int, Swift.Int, Swift.Int) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Int, Swift.Int, Swift.Int)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4CART23CARTCalibrationListenerP11userConfirm12callbackCuffyySi_S2itc_tF",
+            "mangledName": "$s4CART23CARTCalibrationListenerP11userConfirm12callbackCuffyySi_S2itc_tF",
+            "moduleName": "CART",
+            "genericSig": "<τ_0_0 where τ_0_0 : CART.CARTCalibrationListener>",
+            "sugared_genericSig": "<Self where Self : CART.CARTCalibrationListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "afterSaveCuff",
+            "printedName": "afterSaveCuff(step:calEnd:callbackNext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CalibrationStep",
+                "printedName": "CART.CARTDefs.CalibrationStep",
+                "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CARTCalEnd",
+                "printedName": "CART.CARTCalEnd",
+                "usr": "s:4CART10CARTCalEndV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4CART23CARTCalibrationListenerP13afterSaveCuff4step6calEnd12callbackNextyAA8CARTDefsO15CalibrationStepO_AA07CARTCalI0VySbctF",
+            "mangledName": "$s4CART23CARTCalibrationListenerP13afterSaveCuff4step6calEnd12callbackNextyAA8CARTDefsO15CalibrationStepO_AA07CARTCalI0VySbctF",
+            "moduleName": "CART",
+            "genericSig": "<τ_0_0 where τ_0_0 : CART.CARTCalibrationListener>",
+            "sugared_genericSig": "<Self where Self : CART.CARTCalibrationListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stabilityFail",
+            "printedName": "stabilityFail(step:callbackNext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CalibrationStep",
+                "printedName": "CART.CARTDefs.CalibrationStep",
+                "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4CART23CARTCalibrationListenerP13stabilityFail4step12callbackNextyAA8CARTDefsO15CalibrationStepO_ySbcSgtF",
+            "mangledName": "$s4CART23CARTCalibrationListenerP13stabilityFail4step12callbackNextyAA8CARTDefsO15CalibrationStepO_ySbcSgtF",
+            "moduleName": "CART",
+            "genericSig": "<τ_0_0 where τ_0_0 : CART.CARTCalibrationListener>",
+            "sugared_genericSig": "<Self where Self : CART.CARTCalibrationListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "result",
-            "printedName": "result(result:)",
+            "printedName": "result(result:step:callbackNext:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3659,11 +3862,43 @@
                 "name": "CARTCalibrationResult",
                 "printedName": "CART.CARTCalibrationResult",
                 "usr": "s:4CART21CARTCalibrationResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CalibrationStep",
+                "printedName": "CART.CARTDefs.CalibrationStep",
+                "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:4CART23CARTCalibrationListenerP6resultADyAA0B6ResultV_tF",
-            "mangledName": "$s4CART23CARTCalibrationListenerP6resultADyAA0B6ResultV_tF",
+            "usr": "s:4CART23CARTCalibrationListenerP6resultAD4step12callbackNextyAA0B6ResultV_AA8CARTDefsO15CalibrationStepOySbcSgtF",
+            "mangledName": "$s4CART23CARTCalibrationListenerP6resultAD4step12callbackNextyAA0B6ResultV_AA8CARTDefsO15CalibrationStepOySbcSgtF",
             "moduleName": "CART",
             "genericSig": "<τ_0_0 where τ_0_0 : CART.CARTCalibrationListener>",
             "sugared_genericSig": "<Self where Self : CART.CARTCalibrationListener>",
@@ -3695,41 +3930,6 @@
             "declAttributes": [
               "RawDocComment"
             ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "realTimePPG",
-            "printedName": "realTimePPG(ppgData:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.Double]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4CART23CARTCalibrationListenerP11realTimePPG7ppgDataySaySdG_tF",
-            "mangledName": "$s4CART23CARTCalibrationListenerP11realTimePPG7ppgDataySaySdG_tF",
-            "moduleName": "CART",
-            "genericSig": "<τ_0_0 where τ_0_0 : CART.CARTCalibrationListener>",
-            "sugared_genericSig": "<Self where Self : CART.CARTCalibrationListener>",
-            "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
@@ -4702,6 +4902,27 @@
             "declKind": "Func",
             "usr": "s:4CART15CARTISSListenerP6resultADyAA13CARTIssResultV_tF",
             "mangledName": "$s4CART15CARTISSListenerP6resultADyAA13CARTIssResultV_tF",
+            "moduleName": "CART",
+            "genericSig": "<τ_0_0 where τ_0_0 : CART.CARTISSListener>",
+            "sugared_genericSig": "<Self where Self : CART.CARTISSListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4CART15CARTISSListenerP4stopyyF",
+            "mangledName": "$s4CART15CARTISSListenerP4stopyyF",
             "moduleName": "CART",
             "genericSig": "<τ_0_0 where τ_0_0 : CART.CARTISSListener>",
             "sugared_genericSig": "<Self where Self : CART.CARTISSListener>",
@@ -6780,6 +7001,117 @@
               },
               {
                 "kind": "Var",
+                "name": "FAILED",
+                "printedName": "FAILED",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorType.Type) -> CART.CARTDefs.CalErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorType",
+                        "printedName": "CART.CARTDefs.CalErrorType",
+                        "usr": "s:4CART8CARTDefsO12CalErrorTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorType",
+                            "printedName": "CART.CARTDefs.CalErrorType",
+                            "usr": "s:4CART8CARTDefsO12CalErrorTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorTypeO6FAILEDyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorTypeO6FAILEDyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
+                "name": "BATTERY_CHARGING",
+                "printedName": "BATTERY_CHARGING",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorType.Type) -> CART.CARTDefs.CalErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorType",
+                        "printedName": "CART.CARTDefs.CalErrorType",
+                        "usr": "s:4CART8CARTDefsO12CalErrorTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorType",
+                            "printedName": "CART.CARTDefs.CalErrorType",
+                            "usr": "s:4CART8CARTDefsO12CalErrorTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorTypeO16BATTERY_CHARGINGyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorTypeO16BATTERY_CHARGINGyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
+                "name": "BATTERY_TIMEOUT",
+                "printedName": "BATTERY_TIMEOUT",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorType.Type) -> CART.CARTDefs.CalErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorType",
+                        "printedName": "CART.CARTDefs.CalErrorType",
+                        "usr": "s:4CART8CARTDefsO12CalErrorTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorType",
+                            "printedName": "CART.CARTDefs.CalErrorType",
+                            "usr": "s:4CART8CARTDefsO12CalErrorTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorTypeO15BATTERY_TIMEOUTyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorTypeO15BATTERY_TIMEOUTyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
                 "name": "CMD_RES_ERR",
                 "printedName": "CMD_RES_ERR",
                 "children": [
@@ -6813,6 +7145,117 @@
                 "declKind": "EnumElement",
                 "usr": "s:4CART8CARTDefsO12CalErrorTypeO11CMD_RES_ERRyA2EmF",
                 "mangledName": "$s4CART8CARTDefsO12CalErrorTypeO11CMD_RES_ERRyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
+                "name": "API_ERROR",
+                "printedName": "API_ERROR",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorType.Type) -> CART.CARTDefs.CalErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorType",
+                        "printedName": "CART.CARTDefs.CalErrorType",
+                        "usr": "s:4CART8CARTDefsO12CalErrorTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorType",
+                            "printedName": "CART.CARTDefs.CalErrorType",
+                            "usr": "s:4CART8CARTDefsO12CalErrorTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorTypeO9API_ERRORyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorTypeO9API_ERRORyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
+                "name": "HTTP_ERROR",
+                "printedName": "HTTP_ERROR",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorType.Type) -> CART.CARTDefs.CalErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorType",
+                        "printedName": "CART.CARTDefs.CalErrorType",
+                        "usr": "s:4CART8CARTDefsO12CalErrorTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorType",
+                            "printedName": "CART.CARTDefs.CalErrorType",
+                            "usr": "s:4CART8CARTDefsO12CalErrorTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorTypeO10HTTP_ERRORyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorTypeO10HTTP_ERRORyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
+                "name": "ERROR_CODE",
+                "printedName": "ERROR_CODE",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorType.Type) -> CART.CARTDefs.CalErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorType",
+                        "printedName": "CART.CARTDefs.CalErrorType",
+                        "usr": "s:4CART8CARTDefsO12CalErrorTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorType",
+                            "printedName": "CART.CARTDefs.CalErrorType",
+                            "usr": "s:4CART8CARTDefsO12CalErrorTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorTypeO10ERROR_CODEyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorTypeO10ERROR_CODEyA2EmF",
                 "moduleName": "CART"
               },
               {
@@ -8650,6 +9093,43 @@
               },
               {
                 "kind": "Var",
+                "name": "DATA_CONTROL_NOT_NULL",
+                "printedName": "DATA_CONTROL_NOT_NULL",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.ErrorType.Type) -> CART.CARTDefs.ErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErrorType",
+                        "printedName": "CART.CARTDefs.ErrorType",
+                        "usr": "s:4CART8CARTDefsO9ErrorTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.ErrorType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorType",
+                            "printedName": "CART.CARTDefs.ErrorType",
+                            "usr": "s:4CART8CARTDefsO9ErrorTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO9ErrorTypeO21DATA_CONTROL_NOT_NULLyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO9ErrorTypeO21DATA_CONTROL_NOT_NULLyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
                 "name": "NOT_REGISTERED",
                 "printedName": "NOT_REGISTERED",
                 "children": [
@@ -9076,6 +9556,808 @@
                 "printedName": "Hashable",
                 "usr": "s:SH",
                 "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CalibrationStep",
+            "printedName": "CalibrationStep",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "NONE",
+                "printedName": "NONE",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalibrationStep.Type) -> CART.CARTDefs.CalibrationStep",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalibrationStep",
+                        "printedName": "CART.CARTDefs.CalibrationStep",
+                        "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalibrationStep.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalibrationStep",
+                            "printedName": "CART.CARTDefs.CalibrationStep",
+                            "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO15CalibrationStepO4NONEyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO15CalibrationStepO4NONEyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
+                "name": "FIRST",
+                "printedName": "FIRST",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalibrationStep.Type) -> CART.CARTDefs.CalibrationStep",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalibrationStep",
+                        "printedName": "CART.CARTDefs.CalibrationStep",
+                        "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalibrationStep.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalibrationStep",
+                            "printedName": "CART.CARTDefs.CalibrationStep",
+                            "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO15CalibrationStepO5FIRSTyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO15CalibrationStepO5FIRSTyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
+                "name": "SECONDARY",
+                "printedName": "SECONDARY",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalibrationStep.Type) -> CART.CARTDefs.CalibrationStep",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalibrationStep",
+                        "printedName": "CART.CARTDefs.CalibrationStep",
+                        "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalibrationStep.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalibrationStep",
+                            "printedName": "CART.CARTDefs.CalibrationStep",
+                            "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO15CalibrationStepO9SECONDARYyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO15CalibrationStepO9SECONDARYyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
+                "name": "THIRD",
+                "printedName": "THIRD",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalibrationStep.Type) -> CART.CARTDefs.CalibrationStep",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalibrationStep",
+                        "printedName": "CART.CARTDefs.CalibrationStep",
+                        "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalibrationStep.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalibrationStep",
+                            "printedName": "CART.CARTDefs.CalibrationStep",
+                            "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO15CalibrationStepO5THIRDyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO15CalibrationStepO5THIRDyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
+                "name": "COMPLETE",
+                "printedName": "COMPLETE",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalibrationStep.Type) -> CART.CARTDefs.CalibrationStep",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalibrationStep",
+                        "printedName": "CART.CARTDefs.CalibrationStep",
+                        "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalibrationStep.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalibrationStep",
+                            "printedName": "CART.CARTDefs.CalibrationStep",
+                            "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO15CalibrationStepO8COMPLETEyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO15CalibrationStepO8COMPLETEyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
+                "name": "UNKNOWN",
+                "printedName": "UNKNOWN",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalibrationStep.Type) -> CART.CARTDefs.CalibrationStep",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalibrationStep",
+                        "printedName": "CART.CARTDefs.CalibrationStep",
+                        "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalibrationStep.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalibrationStep",
+                            "printedName": "CART.CARTDefs.CalibrationStep",
+                            "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO15CalibrationStepO7UNKNOWNyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO15CalibrationStepO7UNKNOWNyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Function",
+                "name": "from",
+                "printedName": "from(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CalibrationStep",
+                    "printedName": "CART.CARTDefs.CalibrationStep",
+                    "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:4CART8CARTDefsO15CalibrationStepO4fromyAESiFZ",
+                "mangledName": "$s4CART8CARTDefsO15CalibrationStepO4fromyAESiFZ",
+                "moduleName": "CART",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CART.CARTDefs.CalibrationStep?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalibrationStep",
+                        "printedName": "CART.CARTDefs.CalibrationStep",
+                        "usr": "s:4CART8CARTDefsO15CalibrationStepO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:4CART8CARTDefsO15CalibrationStepO8rawValueAESgSi_tcfc",
+                "mangledName": "$s4CART8CARTDefsO15CalibrationStepO8rawValueAESgSi_tcfc",
+                "moduleName": "CART",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4CART8CARTDefsO15CalibrationStepO8rawValueSivp",
+                "mangledName": "$s4CART8CARTDefsO15CalibrationStepO8rawValueSivp",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4CART8CARTDefsO15CalibrationStepO8rawValueSivg",
+                    "mangledName": "$s4CART8CARTDefsO15CalibrationStepO8rawValueSivg",
+                    "moduleName": "CART",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:4CART8CARTDefsO15CalibrationStepO",
+            "mangledName": "$s4CART8CARTDefsO15CalibrationStepO",
+            "moduleName": "CART",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CalErrorCode",
+            "printedName": "CalErrorCode",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "NONE",
+                "printedName": "NONE",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorCode.Type) -> CART.CARTDefs.CalErrorCode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorCode",
+                        "printedName": "CART.CARTDefs.CalErrorCode",
+                        "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorCode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorCode",
+                            "printedName": "CART.CARTDefs.CalErrorCode",
+                            "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorCodeO4NONEyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorCodeO4NONEyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
+                "name": "STABILITY_FAILED",
+                "printedName": "STABILITY_FAILED",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorCode.Type) -> CART.CARTDefs.CalErrorCode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorCode",
+                        "printedName": "CART.CARTDefs.CalErrorCode",
+                        "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorCode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorCode",
+                            "printedName": "CART.CARTDefs.CalErrorCode",
+                            "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorCodeO16STABILITY_FAILEDyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorCodeO16STABILITY_FAILEDyA2EmF",
+                "moduleName": "CART"
+              },
+              {
+                "kind": "Var",
+                "name": "AF_FAILED",
+                "printedName": "AF_FAILED",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorCode.Type) -> CART.CARTDefs.CalErrorCode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorCode",
+                        "printedName": "CART.CARTDefs.CalErrorCode",
+                        "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorCode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorCode",
+                            "printedName": "CART.CARTDefs.CalErrorCode",
+                            "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorCodeO9AF_FAILEDyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorCodeO9AF_FAILEDyA2EmF",
+                "moduleName": "CART",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "NOISE_POOR",
+                "printedName": "NOISE_POOR",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorCode.Type) -> CART.CARTDefs.CalErrorCode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorCode",
+                        "printedName": "CART.CARTDefs.CalErrorCode",
+                        "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorCode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorCode",
+                            "printedName": "CART.CARTDefs.CalErrorCode",
+                            "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorCodeO10NOISE_POORyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorCodeO10NOISE_POORyA2EmF",
+                "moduleName": "CART",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "OUTLIER",
+                "printedName": "OUTLIER",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorCode.Type) -> CART.CARTDefs.CalErrorCode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorCode",
+                        "printedName": "CART.CARTDefs.CalErrorCode",
+                        "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorCode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorCode",
+                            "printedName": "CART.CARTDefs.CalErrorCode",
+                            "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorCodeO7OUTLIERyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorCodeO7OUTLIERyA2EmF",
+                "moduleName": "CART",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "BP_FAILED",
+                "printedName": "BP_FAILED",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorCode.Type) -> CART.CARTDefs.CalErrorCode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorCode",
+                        "printedName": "CART.CARTDefs.CalErrorCode",
+                        "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorCode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorCode",
+                            "printedName": "CART.CARTDefs.CalErrorCode",
+                            "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorCodeO9BP_FAILEDyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorCodeO9BP_FAILEDyA2EmF",
+                "moduleName": "CART",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "SIGNAL_FAILED",
+                "printedName": "SIGNAL_FAILED",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CART.CARTDefs.CalErrorCode.Type) -> CART.CARTDefs.CalErrorCode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorCode",
+                        "printedName": "CART.CARTDefs.CalErrorCode",
+                        "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CART.CARTDefs.CalErrorCode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CalErrorCode",
+                            "printedName": "CART.CARTDefs.CalErrorCode",
+                            "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4CART8CARTDefsO12CalErrorCodeO13SIGNAL_FAILEDyA2EmF",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorCodeO13SIGNAL_FAILEDyA2EmF",
+                "moduleName": "CART",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CART.CARTDefs.CalErrorCode?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorCode",
+                        "printedName": "CART.CARTDefs.CalErrorCode",
+                        "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:4CART8CARTDefsO12CalErrorCodeO8rawValueAESgSi_tcfc",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorCodeO8rawValueAESgSi_tcfc",
+                "moduleName": "CART",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4CART8CARTDefsO12CalErrorCodeO8rawValueSivp",
+                "mangledName": "$s4CART8CARTDefsO12CalErrorCodeO8rawValueSivp",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4CART8CARTDefsO12CalErrorCodeO8rawValueSivg",
+                    "mangledName": "$s4CART8CARTDefsO12CalErrorCodeO8rawValueSivg",
+                    "moduleName": "CART",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:4CART8CARTDefsO12CalErrorCodeO",
+            "mangledName": "$s4CART8CARTDefsO12CalErrorCodeO",
+            "moduleName": "CART",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
               }
             ]
           }
@@ -11538,6 +12820,35 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "CARTCalEnd",
+        "printedName": "CARTCalEnd",
+        "declKind": "Struct",
+        "usr": "s:4CART10CARTCalEndV",
+        "mangledName": "$s4CART10CARTCalEndV",
+        "moduleName": "CART",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -11641,6 +12952,116 @@
                 "declKind": "Accessor",
                 "usr": "s:4CART21CARTCalibrationResultV7successSbvM",
                 "mangledName": "$s4CART21CARTCalibrationResultV7successSbvM",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CART.CARTDefs.CalErrorCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CalErrorCode",
+                    "printedName": "CART.CARTDefs.CalErrorCode",
+                    "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4CART21CARTCalibrationResultV4codeAA8CARTDefsO12CalErrorCodeOSgvp",
+            "mangledName": "$s4CART21CARTCalibrationResultV4codeAA8CARTDefsO12CalErrorCodeOSgvp",
+            "moduleName": "CART",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CART.CARTDefs.CalErrorCode?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorCode",
+                        "printedName": "CART.CARTDefs.CalErrorCode",
+                        "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4CART21CARTCalibrationResultV4codeAA8CARTDefsO12CalErrorCodeOSgvg",
+                "mangledName": "$s4CART21CARTCalibrationResultV4codeAA8CARTDefsO12CalErrorCodeOSgvg",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CART.CARTDefs.CalErrorCode?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CalErrorCode",
+                        "printedName": "CART.CARTDefs.CalErrorCode",
+                        "usr": "s:4CART8CARTDefsO12CalErrorCodeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4CART21CARTCalibrationResultV4codeAA8CARTDefsO12CalErrorCodeOSgvs",
+                "mangledName": "$s4CART21CARTCalibrationResultV4codeAA8CARTDefsO12CalErrorCodeOSgvs",
+                "moduleName": "CART",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4CART21CARTCalibrationResultV4codeAA8CARTDefsO12CalErrorCodeOSgvM",
+                "mangledName": "$s4CART21CARTCalibrationResultV4codeAA8CARTDefsO12CalErrorCodeOSgvM",
                 "moduleName": "CART",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -12474,14 +13895,14 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "Array",
-      "offset": 16300,
+      "offset": 16344,
       "length": 6,
       "value": "[0x00]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 20913,
+      "offset": 20957,
       "length": 5,
       "value": "false"
     },
@@ -12508,50 +13929,71 @@
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2991,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3027,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
+      "kind": "StringLiteral",
+      "offset": 3055,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 2762,
+      "offset": 3206,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 2953,
+      "offset": 3397,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 3540,
+      "offset": 4079,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 7156,
+      "offset": 7695,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 7669,
+      "offset": 8208,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 15434,
+      "offset": 16050,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 15458,
+      "offset": 16074,
       "length": 2,
       "value": "\"\""
     },
@@ -15386,7 +16828,7 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecPacketV1.swift",
       "kind": "Array",
-      "offset": 1742,
+      "offset": 1763,
       "length": 2,
       "value": "[]"
     },
@@ -15494,6 +16936,13 @@
       "offset": 1556,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTCalibration40SecV1.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1776,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTEventLogDataV1.swift",
@@ -16387,156 +17836,289 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 2175,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2372,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2398,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2421,
+      "offset": 2170,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 2448,
+      "offset": 2204,
       "length": 1,
-      "value": "3"
+      "value": "5"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 2477,
+      "offset": 2237,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2266,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 2666,
+      "offset": 2294,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2323,
+      "length": 2,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2352,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2558,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 2692,
+      "offset": 2584,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 2715,
+      "offset": 2607,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 2744,
+      "offset": 2634,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 2774,
+      "offset": 2663,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2852,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2878,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2901,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2930,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2960,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 2803,
+      "offset": 2989,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3001,
+      "offset": 3187,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3027,
+      "offset": 3213,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3050,
+      "offset": 3236,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3077,
+      "offset": 3263,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3106,
+      "offset": 3292,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3446,
+      "offset": 3632,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3472,
+      "offset": 3658,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3495,
+      "offset": 3681,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3522,
+      "offset": 3708,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3551,
+      "offset": 3737,
       "length": 2,
       "value": "10"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4241,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4264,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4291,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4314,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4340,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4365,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4577,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4611,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4659,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4715,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4764,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4838,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTDefs.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4897,
+      "length": 1,
+      "value": "6"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/CARTStatus.swift",
@@ -18562,6 +20144,48 @@
       "value": "0xFF"
     },
     {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Repository\/APIModels\/Request\/APICalibration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1270,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Repository\/APIModels\/Request\/APICalibration.swift",
+      "kind": "StringLiteral",
+      "offset": 1307,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Repository\/APIModels\/Request\/APICalibration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1337,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Repository\/APIModels\/Request\/APICalibration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1481,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Repository\/APIModels\/Request\/APICalibration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1485,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Repository\/APIModels\/Request\/APICalibration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1489,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Repository\/APIModels\/Request\/APICart.swift",
       "kind": "StringLiteral",
       "offset": 649,
@@ -18992,6 +20616,55 @@
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Utils\/Utils.swift",
       "kind": "BooleanLiteral",
       "offset": 2378,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Utils\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2669,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Utils\/Utils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2691,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Utils\/Utils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3029,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Utils\/Utils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3373,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Utils\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3661,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Utils\/Utils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3683,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Utils\/Utils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3838,
       "length": 5,
       "value": "false"
     },

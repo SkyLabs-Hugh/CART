@@ -167,9 +167,12 @@ public enum CalErrorType : Swift.Int {
 }
 public protocol CARTCalibrationListener {
   func progress(position: Swift.Int)
-  func result(result: CART.CARTCalibrationResult)
+  func realTime(data: [Swift.Double], time: Swift.Int)
+  func userConfirm(callbackCuff: @escaping (_ sbp: Swift.Int, _ dbp: Swift.Int, _ errCount: Swift.Int) -> Swift.Void)
+  func afterSaveCuff(step: CART.CARTDefs.CalibrationStep, calEnd: CART.CARTCalEnd, callbackNext: @escaping (_ nextStep: Swift.Bool) -> Swift.Void)
+  func stabilityFail(step: CART.CARTDefs.CalibrationStep, callbackNext: ((_ nextStep: Swift.Bool) -> Swift.Void)?)
+  func result(result: CART.CARTCalibrationResult, step: CART.CARTDefs.CalibrationStep, callbackNext: ((_ nextStep: Swift.Bool) -> Swift.Void)?)
   func stop()
-  func realTimePPG(ppgData: [Swift.Double])
 }
 public enum CmdErrorType : Swift.Int {
   case NONE
@@ -206,6 +209,7 @@ public enum ISSErrorType : Swift.Int {
 public protocol CARTISSListener {
   func progress(position: Swift.Double)
   func result(result: CART.CARTIssResult)
+  func stop()
 }
 public protocol CARTListener {
   func bleConnectStatus(status: CART.CARTDefs.ConnectStatus)
@@ -286,7 +290,13 @@ public enum CARTDefs {
   public enum CalErrorType : Swift.Int, Swift.CaseIterable {
     case NONE
     case ERROR
+    case FAILED
+    case BATTERY_CHARGING
+    case BATTERY_TIMEOUT
     case CMD_RES_ERR
+    case API_ERROR
+    case HTTP_ERROR
+    case ERROR_CODE
     public init?(rawValue: Swift.Int)
     public typealias AllCases = [CART.CARTDefs.CalErrorType]
     public typealias RawValue = Swift.Int
@@ -359,6 +369,7 @@ public enum CARTDefs {
   }
   public enum ErrorType {
     case NONE
+    case DATA_CONTROL_NOT_NULL
     case NOT_REGISTERED
     case RE_CONNECTED
     case NOT_CONNECTED
@@ -370,6 +381,34 @@ public enum CARTDefs {
     public static func == (a: CART.CARTDefs.ErrorType, b: CART.CARTDefs.ErrorType) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum CalibrationStep : Swift.Int {
+    case NONE
+    case FIRST
+    case SECONDARY
+    case THIRD
+    case COMPLETE
+    case UNKNOWN
+    public static func from(_ value: Swift.Int) -> CART.CARTDefs.CalibrationStep
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum CalErrorCode : Swift.Int {
+    case NONE
+    case STABILITY_FAILED
+    case AF_FAILED
+    case NOISE_POOR
+    case OUTLIER
+    case BP_FAILED
+    case SIGNAL_FAILED
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
       get
     }
   }
@@ -450,8 +489,11 @@ public enum CARTFwResponse : Swift.UInt8 {
     get
   }
 }
+public struct CARTCalEnd {
+}
 public struct CARTCalibrationResult {
   public var success: Swift.Bool
+  public var code: CART.CARTDefs.CalErrorCode?
   public var errorType: CART.CARTDefs.CalErrorType?
 }
 public struct CARTEventLog {
@@ -509,6 +551,12 @@ extension CART.CARTDefs.StatusErrorType : Swift.Hashable {}
 extension CART.CARTDefs.StatusErrorType : Swift.RawRepresentable {}
 extension CART.CARTDefs.ErrorType : Swift.Equatable {}
 extension CART.CARTDefs.ErrorType : Swift.Hashable {}
+extension CART.CARTDefs.CalibrationStep : Swift.Equatable {}
+extension CART.CARTDefs.CalibrationStep : Swift.Hashable {}
+extension CART.CARTDefs.CalibrationStep : Swift.RawRepresentable {}
+extension CART.CARTDefs.CalErrorCode : Swift.Equatable {}
+extension CART.CARTDefs.CalErrorCode : Swift.Hashable {}
+extension CART.CARTDefs.CalErrorCode : Swift.RawRepresentable {}
 extension CART.CARTDataType : Swift.Equatable {}
 extension CART.CARTDataType : Swift.Hashable {}
 extension CART.CARTDataType : Swift.RawRepresentable {}
