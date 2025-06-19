@@ -24,6 +24,7 @@ import _SwiftConcurrencyShims
   public var isTryConnect: Swift.Bool
   open func onNotifyData(uuid: CoreBluetooth.CBUUID, response: [Swift.UInt8])
   open func changeConnectionState(state: Swift.Bool)
+  open func checkBleState(state: CART.CARTDefs.ErrorType)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -89,17 +90,16 @@ public typealias DenormalPPGData = ((_ ppgData: [CART.CARTDataType : [Swift.Doub
 public typealias NormalPPGData = ((_ ppgData: [CART.CARTDataType : [Swift.Double]]) -> Swift.Void)?
 public struct ReadData {
 }
-public struct CARTCmdResult {
-  public var success: Swift.Bool
-  public var errorType: CART.CmdErrorType?
+@objc(CARTManager) public protocol CartMangerServiceProtocol {
+  @objc func StartService()
 }
-@objc(CARTManager) public class CARTManager : ObjectiveC.NSObject {
+@objc public class CARTManager : ObjectiveC.NSObject, CART.CartMangerServiceProtocol {
   @objc(shared) public static var shared: CART.CARTManager! {
     get
   }
   public init(clientId: Swift.String, clientSecret: Swift.String, bleVersion: CART.CARTDefs.CARTProtocolVersion, cartListener: any CART.CARTListener, bizType: CART.BizType = .B2H)
-  public func StartService()
-  public func setUserInfo(userKey: Swift.String, info: inout [Swift.String : Any?], _ complete: ((_ success: Swift.Bool) -> Swift.Void)? = nil)
+  @objc public func StartService()
+  public func setUserInfo(userKey: Swift.String, info: inout [Swift.String : Any?], listener: any CART.CARTUserListener)
   @objc deinit
 }
 extension CART.CARTManager {
@@ -113,10 +113,14 @@ extension CART.CARTManager {
   public func scanStop()
 }
 extension CART.CARTManager {
-  public func connect(serialId: Swift.String, isReg: Swift.Bool)
+  public func connectSerial(serialId: Swift.String, isReg: Swift.Bool)
   public func connect(macAddress: Swift.String, isReg: Swift.Bool)
   public func connect(cartName: Swift.String, isReg: Swift.Bool)
   public func disConnect()
+}
+extension CART.CARTManager {
+  public func deviceInfo() -> CART.CARTDeviceInfo?
+  public func deviceInfoFromServer() -> CART.CARTDeviceInfo?
 }
 extension CART.CARTManager {
   public func stop()
@@ -134,7 +138,7 @@ extension CART.CARTManager {
   public func systemStatus2(complete: @escaping CART.CompleteType)
 }
 extension CART.CARTManager {
-  public func calibration(listener: any CART.CARTCalibrationListener)
+  public func calibration(listener: any CART.CARTCalListener)
 }
 extension CART.CARTManager {
   public func iss(issListener: any CART.CARTISSListener)
@@ -147,105 +151,66 @@ extension CART.CARTManager {
 }
 extension CART.CARTManager {
   public func backgroundBP(listener: any CART.CARTBpListener)
-  public func bpStatus(listener: any CART.CARTStatusListener, isB2C: Swift.Bool = false)
+  public func bpStatus(listener: any CART.CARTStatusListener)
+}
+extension CART.CARTManager {
+  public func collectStart(listener: any CART.CARTCmdListener, time: Swift.Int, count: Swift.Int)
+  public func collectStop(listener: any CART.CARTCmdListener)
 }
 public protocol CARTBpListener {
   func count(count: Swift.Int)
   func progress(position: Swift.Int, max: Swift.Int)
-  func result(success: Swift.Bool, errorType: CART.CARTDefs.BpErrorType?)
-  func stop()
+  func result(result: CART.CARTBpResult)
 }
-public enum CalErrorType : Swift.Int {
-  case NONE
-  case ERROR
-  case CMD_RES_ERR
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public protocol CARTCalibrationListener {
+public protocol CARTCalListener {
   func progress(position: Swift.Int)
   func realTime(data: [Swift.Double], time: Swift.Int)
   func userConfirm(callbackCuff: @escaping (_ sbp: Swift.Int, _ dbp: Swift.Int, _ errCount: Swift.Int) -> Swift.Void)
   func afterSaveCuff(step: CART.CARTDefs.CalibrationStep, calEnd: CART.CARTCalEnd, callbackNext: @escaping (_ nextStep: Swift.Bool) -> Swift.Void)
-  func stabilityFail(step: CART.CARTDefs.CalibrationStep, callbackNext: ((_ nextStep: Swift.Bool) -> Swift.Void)?)
-  func result(result: CART.CARTCalibrationResult, step: CART.CARTDefs.CalibrationStep, callbackNext: ((_ nextStep: Swift.Bool) -> Swift.Void)?)
-  func stop()
-}
-public enum CmdErrorType : Swift.Int {
-  case NONE
-  case ERROR
-  case DATA_NONE
-  case CMD_RES_ERR
-  case API_ERROR
-  case HTTP_ERROR
-  case ERROR_CODE
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
+  func stabilityFail(step: CART.CARTDefs.CalibrationStep, callbackNext: @escaping (_ nextStep: Swift.Bool) -> Swift.Void)
+  func result(result: CART.CARTCalibrationResult, step: CART.CARTDefs.CalibrationStep, callbackNext: @escaping (_ nextStep: Swift.Bool) -> Swift.Void)
 }
 public protocol CARTCmdListener {
   func result(result: CART.CARTCmdResult)
 }
-public enum ISSErrorType : Swift.Int {
-  case NONE
-  case WD_ERROR
-  case ERROR
-  case BATTERY_CHARGING
-  case BATTERY_TIMEOUT
-  case CMD_RES_ERR
-  case API_ERROR
-  case HTTP_ERROR
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 public protocol CARTISSListener {
   func progress(position: Swift.Double)
   func result(result: CART.CARTIssResult)
-  func stop()
 }
 public protocol CARTListener {
   func bleConnectStatus(status: CART.CARTDefs.ConnectStatus)
   func batteryStatus(level: Swift.Int, charge: Swift.Bool)
   func notification(type: CART.CARTDefs.NotiType)
-  func verifyConfirm(serial: Swift.String, currentFwVer: Swift.String, listener: @escaping (_ confirm: Swift.Bool) -> Swift.Void)
+  func verifyConfirm(listener: @escaping (_ confirm: Swift.Bool) -> Swift.Void)
   func error(type: CART.CARTDefs.ErrorType)
+  func stop()
 }
 public protocol CARTLogListener {
   func count(_ count: Swift.Int)
   func progress(position: Swift.Int, max: Swift.Int)
-  func result(success: Swift.Bool, errorType: CART.CARTDefs.LogErrorType?)
-  func stop()
-}
-public enum PSSErrorType : Swift.Int {
-  case NONE
-  case WD_ERROR
-  case ERROR
-  case UNAVAILABLE
-  case ALREADY_DONE
-  case CMD_RES_ERR
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
+  func result(result: CART.CARTLogResult)
 }
 public protocol CARTPSSListener {
   func progress(position: Swift.Double)
-  func result(success: Swift.Bool, errorType: CART.PSSErrorType?)
+  func result(success: Swift.Bool, errorType: CART.CARTDefs.PSSErrorType?)
 }
 public protocol CARTScanListener {
   func bleScanList(scanStatus: CART.CARTDefs.ScanStatus, device: CART.CARTDevice?)
 }
 public protocol CARTStatusListener {
   func result(success: Swift.Bool, status: CART.CARTStatus?, errorType: CART.CARTDefs.StatusErrorType?)
+}
+public protocol CARTUserListener {
+  func result(success: Swift.Bool)
+}
+public struct CARTCalEnd {
+  public var calHistParentNo: Swift.Int
+  public var saveKey: Swift.String
+  public var signalQualityDecision: Swift.Int
+  public var bpStability: Swift.Int
+  public var calibrationRound: Swift.Int
+  public var calibrationCount: Swift.Int
+  public var successCount: Swift.Int
 }
 public enum CARTDefs {
   public enum CARTProtocolVersion {
@@ -287,76 +252,31 @@ public enum CARTDefs {
       get
     }
   }
-  public enum CalErrorType : Swift.Int, Swift.CaseIterable {
+  public enum ISSErrorType : Swift.Int, Swift.CaseIterable {
     case NONE
+    case WD_ERROR
     case ERROR
-    case FAILED
     case BATTERY_CHARGING
-    case BATTERY_TIMEOUT
     case CMD_RES_ERR
     case API_ERROR
     case HTTP_ERROR
-    case ERROR_CODE
+    case WORK_IN_PROGRESS
     public init?(rawValue: Swift.Int)
-    public typealias AllCases = [CART.CARTDefs.CalErrorType]
+    public typealias AllCases = [CART.CARTDefs.ISSErrorType]
     public typealias RawValue = Swift.Int
-    nonisolated public static var allCases: [CART.CARTDefs.CalErrorType] {
+    nonisolated public static var allCases: [CART.CARTDefs.ISSErrorType] {
       get
     }
     public var rawValue: Swift.Int {
-      get
-    }
-  }
-  public enum BpErrorType : Swift.Int, Swift.CaseIterable {
-    case NONE
-    case WD_ERROR
-    case ERROR
-    case DATA_NONE
-    case CMD_RES_ERR
-    public init?(rawValue: Swift.Int)
-    public typealias AllCases = [CART.CARTDefs.BpErrorType]
-    public typealias RawValue = Swift.Int
-    nonisolated public static var allCases: [CART.CARTDefs.BpErrorType] {
-      get
-    }
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
-  public enum LogErrorType : Swift.Int, Swift.CaseIterable {
-    case NONE
-    case WD_ERROR
-    case ERROR
-    case DATA_NONE
-    case CMD_RES_ERR
-    public init?(rawValue: Swift.Int)
-    public typealias AllCases = [CART.CARTDefs.LogErrorType]
-    public typealias RawValue = Swift.Int
-    nonisolated public static var allCases: [CART.CARTDefs.LogErrorType] {
-      get
-    }
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
-  public enum NotiType {
-    case NONE
-    case BATTERY
-    case PSS
-    case EVENT_LOG
-    case TIME_OUT
-    public static func == (a: CART.CARTDefs.NotiType, b: CART.CARTDefs.NotiType) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
       get
     }
   }
   public enum StatusErrorType : Swift.Int, Swift.CaseIterable {
     case NONE
-    case WD_ERROR
     case ERROR
     case DATA_NONE
     case CMD_RES_ERR
+    case WORK_IN_PROGRESS
     public init?(rawValue: Swift.Int)
     public typealias AllCases = [CART.CARTDefs.StatusErrorType]
     public typealias RawValue = Swift.Int
@@ -367,20 +287,52 @@ public enum CARTDefs {
       get
     }
   }
-  public enum ErrorType {
+  public enum CmdErrorType : Swift.Int {
     case NONE
-    case DATA_CONTROL_NOT_NULL
-    case NOT_REGISTERED
-    case RE_CONNECTED
-    case NOT_CONNECTED
-    case VERIFY_ERROR
-    case CART_UPDATE_ERROR
+    case ERROR
+    case DATA_NONE
     case CMD_RES_ERR
-    case FAIL_GET_MACADDRESS
     case API_ERROR
-    public static func == (a: CART.CARTDefs.ErrorType, b: CART.CARTDefs.ErrorType) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
+    case HTTP_ERROR
+    case ERROR_CODE
+    case WORK_IN_PROGRESS
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum CalErrorType : Swift.Int, Swift.CaseIterable {
+    case NONE
+    case ERROR
+    case FAILED
+    case BATTERY_CHARGING
+    case CMD_RES_ERR
+    case API_ERROR
+    case HTTP_ERROR
+    case ERROR_CODE
+    case WORK_IN_PROGRESS
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [CART.CARTDefs.CalErrorType]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [CART.CARTDefs.CalErrorType] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum CalErrorCode : Swift.Int {
+    case NONE
+    case STABILITY_FAILED
+    case AF_FAILED
+    case NOISE_POOR
+    case OUTLIER
+    case BP_FAILED
+    case SIGNAL_FAILED
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
       get
     }
   }
@@ -398,17 +350,90 @@ public enum CARTDefs {
       get
     }
   }
-  public enum CalErrorCode : Swift.Int {
+  public enum BpErrorType : Swift.Int, Swift.CaseIterable {
     case NONE
-    case STABILITY_FAILED
-    case AF_FAILED
-    case NOISE_POOR
-    case OUTLIER
-    case BP_FAILED
-    case SIGNAL_FAILED
+    case ERROR
+    case DATA_NONE
+    case CMD_RES_ERR
+    case API_ERROR
+    case HTTP_ERROR
+    case WORK_IN_PROGRESS
     public init?(rawValue: Swift.Int)
+    public typealias AllCases = [CART.CARTDefs.BpErrorType]
     public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [CART.CARTDefs.BpErrorType] {
+      get
+    }
     public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum PSSErrorType : Swift.Int, Swift.CaseIterable {
+    case NONE
+    case WD_ERROR
+    case ERROR
+    case UNAVAILABLE
+    case ALREADY_DONE
+    case CMD_RES_ERR
+    case WORK_IN_PROGRESS
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [CART.CARTDefs.PSSErrorType]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [CART.CARTDefs.PSSErrorType] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum LogErrorType : Swift.Int, Swift.CaseIterable {
+    case NONE
+    case ERROR
+    case DATA_NONE
+    case CMD_RES_ERR
+    case API_ERROR
+    case HTTP_ERROR
+    case WORK_IN_PROGRESS
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [CART.CARTDefs.LogErrorType]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [CART.CARTDefs.LogErrorType] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum NotiType {
+    case NONE
+    case BATTERY
+    case PSS
+    case EVENT_LOG
+    case TIME_OUT
+    case BG_CHECK
+    public static func == (a: CART.CARTDefs.NotiType, b: CART.CARTDefs.NotiType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ErrorType {
+    case NONE
+    case NOT_REGISTERED
+    case RE_CONNECTED
+    case NOT_CONNECTED
+    case VERIFY_ERROR
+    case CART_UPDATE_ERROR
+    case CMD_RES_ERR
+    case FAIL_GET_MACADDRESS
+    case API_ERROR
+    case HTTP_ERROR
+    case WORK_IN_PROGRESS
+    case BLE_POWER_OFF
+    case BLE_NSBLUETOOTH
+    public static func == (a: CART.CARTDefs.ErrorType, b: CART.CARTDefs.ErrorType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
       get
     }
   }
@@ -489,18 +514,50 @@ public enum CARTFwResponse : Swift.UInt8 {
     get
   }
 }
-public struct CARTCalEnd {
+public struct CARTBpResult {
+  public var success: Swift.Bool
+  public var errorType: CART.CARTDefs.BpErrorType?
 }
 public struct CARTCalibrationResult {
   public var success: Swift.Bool
   public var code: CART.CARTDefs.CalErrorCode?
   public var errorType: CART.CARTDefs.CalErrorType?
 }
-public struct CARTEventLog {
+public struct CARTCmdResult {
+  public var success: Swift.Bool
+  public var errorType: CART.CARTDefs.CmdErrorType?
+}
+public struct CARTDeviceInfo : Swift.Codable {
+  public var name: Swift.String
+  public var address: Swift.String
+  public var serial: Swift.String
+  public var currentFw: Swift.String
+  public var size: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CARTLogResult {
+  public var success: Swift.Bool
+  public var errorType: CART.CARTDefs.LogErrorType?
+}
+public enum ISSErrorType : Swift.Int {
+  case NONE
+  case WD_ERROR
+  case ERROR
+  case BATTERY_CHARGING
+  case BATTERY_TIMEOUT
+  case CMD_RES_ERR
+  case API_ERROR
+  case HTTP_ERROR
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 public struct CARTIssResult {
   public var success: Swift.Bool
-  public var errorType: CART.ISSErrorType?
+  public var errorType: CART.CARTDefs.ISSErrorType?
 }
 @propertyWrapper public struct UserDefault<Value> {
   public var wrappedValue: Value? {
@@ -521,45 +578,45 @@ extension CART.BizType : Swift.Equatable {}
 extension CART.BizType : Swift.Hashable {}
 extension CART.DataControlStatus : Swift.Equatable {}
 extension CART.DataControlStatus : Swift.Hashable {}
-extension CART.CalErrorType : Swift.Equatable {}
-extension CART.CalErrorType : Swift.Hashable {}
-extension CART.CalErrorType : Swift.RawRepresentable {}
-extension CART.CmdErrorType : Swift.Equatable {}
-extension CART.CmdErrorType : Swift.Hashable {}
-extension CART.CmdErrorType : Swift.RawRepresentable {}
-extension CART.ISSErrorType : Swift.Equatable {}
-extension CART.ISSErrorType : Swift.Hashable {}
-extension CART.ISSErrorType : Swift.RawRepresentable {}
-extension CART.PSSErrorType : Swift.Equatable {}
-extension CART.PSSErrorType : Swift.Hashable {}
-extension CART.PSSErrorType : Swift.RawRepresentable {}
 extension CART.CARTDefs.CARTProtocolVersion : Swift.Equatable {}
 extension CART.CARTDefs.CARTProtocolVersion : Swift.Hashable {}
+extension CART.CARTDefs.ISSErrorType : Swift.Equatable {}
+extension CART.CARTDefs.ISSErrorType : Swift.Hashable {}
+extension CART.CARTDefs.ISSErrorType : Swift.RawRepresentable {}
+extension CART.CARTDefs.StatusErrorType : Swift.Equatable {}
+extension CART.CARTDefs.StatusErrorType : Swift.Hashable {}
+extension CART.CARTDefs.StatusErrorType : Swift.RawRepresentable {}
+extension CART.CARTDefs.CmdErrorType : Swift.Equatable {}
+extension CART.CARTDefs.CmdErrorType : Swift.Hashable {}
+extension CART.CARTDefs.CmdErrorType : Swift.RawRepresentable {}
 extension CART.CARTDefs.CalErrorType : Swift.Equatable {}
 extension CART.CARTDefs.CalErrorType : Swift.Hashable {}
 extension CART.CARTDefs.CalErrorType : Swift.RawRepresentable {}
+extension CART.CARTDefs.CalErrorCode : Swift.Equatable {}
+extension CART.CARTDefs.CalErrorCode : Swift.Hashable {}
+extension CART.CARTDefs.CalErrorCode : Swift.RawRepresentable {}
+extension CART.CARTDefs.CalibrationStep : Swift.Equatable {}
+extension CART.CARTDefs.CalibrationStep : Swift.Hashable {}
+extension CART.CARTDefs.CalibrationStep : Swift.RawRepresentable {}
 extension CART.CARTDefs.BpErrorType : Swift.Equatable {}
 extension CART.CARTDefs.BpErrorType : Swift.Hashable {}
 extension CART.CARTDefs.BpErrorType : Swift.RawRepresentable {}
+extension CART.CARTDefs.PSSErrorType : Swift.Equatable {}
+extension CART.CARTDefs.PSSErrorType : Swift.Hashable {}
+extension CART.CARTDefs.PSSErrorType : Swift.RawRepresentable {}
 extension CART.CARTDefs.LogErrorType : Swift.Equatable {}
 extension CART.CARTDefs.LogErrorType : Swift.Hashable {}
 extension CART.CARTDefs.LogErrorType : Swift.RawRepresentable {}
 extension CART.CARTDefs.NotiType : Swift.Equatable {}
 extension CART.CARTDefs.NotiType : Swift.Hashable {}
-extension CART.CARTDefs.StatusErrorType : Swift.Equatable {}
-extension CART.CARTDefs.StatusErrorType : Swift.Hashable {}
-extension CART.CARTDefs.StatusErrorType : Swift.RawRepresentable {}
 extension CART.CARTDefs.ErrorType : Swift.Equatable {}
 extension CART.CARTDefs.ErrorType : Swift.Hashable {}
-extension CART.CARTDefs.CalibrationStep : Swift.Equatable {}
-extension CART.CARTDefs.CalibrationStep : Swift.Hashable {}
-extension CART.CARTDefs.CalibrationStep : Swift.RawRepresentable {}
-extension CART.CARTDefs.CalErrorCode : Swift.Equatable {}
-extension CART.CARTDefs.CalErrorCode : Swift.Hashable {}
-extension CART.CARTDefs.CalErrorCode : Swift.RawRepresentable {}
 extension CART.CARTDataType : Swift.Equatable {}
 extension CART.CARTDataType : Swift.Hashable {}
 extension CART.CARTDataType : Swift.RawRepresentable {}
 extension CART.CARTFwResponse : Swift.Equatable {}
 extension CART.CARTFwResponse : Swift.Hashable {}
 extension CART.CARTFwResponse : Swift.RawRepresentable {}
+extension CART.ISSErrorType : Swift.Equatable {}
+extension CART.ISSErrorType : Swift.Hashable {}
+extension CART.ISSErrorType : Swift.RawRepresentable {}

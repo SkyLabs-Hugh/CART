@@ -310,7 +310,6 @@ SWIFT_CLASS("_TtC4CART7BLEBase")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class CBCentralManager;
 @class CBPeripheral;
 @class NSString;
@@ -319,6 +318,7 @@ SWIFT_CLASS("_TtC4CART7BLEBase")
 @interface BLEBase (SWIFT_EXTENSION(CART))
 - (void)centralManager:(CBCentralManager * _Nonnull)central didDiscoverPeripheral:(CBPeripheral * _Nonnull)peripheral advertisementData:(NSDictionary<NSString *, id> * _Nonnull)advertisementData RSSI:(NSNumber * _Nonnull)RSSI;
 @end
+
 
 
 
@@ -349,13 +349,22 @@ SWIFT_CLASS("_TtC4CART7BLEBase")
 
 
 
-SWIFT_CLASS_NAMED("CARTManager")
-@interface CARTManager : NSObject
+SWIFT_PROTOCOL_NAMED("CartMangerServiceProtocol")
+@protocol CARTManager
+- (void)StartService;
+@end
+
+
+SWIFT_CLASS("_TtC4CART11CARTManager")
+@interface CARTManager : NSObject <CARTManager>
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CARTManager * _Null_unspecified shared;)
 + (CARTManager * _Null_unspecified)shared SWIFT_WARN_UNUSED_RESULT;
+- (void)StartService;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 
@@ -378,6 +387,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSBundle * _
 + (NSBundle * _Nonnull)bundle SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 #endif
