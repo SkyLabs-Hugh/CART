@@ -4,9 +4,13 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import CART
 import Combine
+import CommonCrypto
 import Compression
 import CoreBluetooth
+import CryptoKit
 import Foundation
+import SQLite3
+import Security
 import Swift
 import SwiftUI
 import UIKit
@@ -60,6 +64,15 @@ public enum BizType {
     get
   }
 }
+public enum BizSubType {
+  case NONE
+  case B2HP
+  public static func == (a: CART.BizSubType, b: CART.BizSubType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public enum CARTProtocol {
   public struct TYPE : Swift.Equatable {
     public static func == (a: CART.CARTProtocol.TYPE, b: CART.CARTProtocol.TYPE) -> Swift.Bool
@@ -85,12 +98,16 @@ public typealias DenormalPPGData = ((_ ppgData: [CART.CARTDataType : [Swift.Doub
 public typealias NormalPPGData = ((_ ppgData: [CART.CARTDataType : [Swift.Double]]) -> Swift.Void)?
 public struct ReadData {
 }
+public struct BackgroundBPData : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public protocol CARTMangerServiceProtocol {
   func StartService()
   func setUserInfo(userKey: Swift.String, info: inout [Swift.String : Any?], listener: any CART.CARTUserListener)
 }
 @objc public class CARTManager : ObjectiveC.NSObject, CART.CARTMangerServiceProtocol {
-  public init(clientId: Swift.String, clientSecret: Swift.String, bleVersion: CART.CARTDefs.CARTProtocolVersion, cartListener: any CART.CARTListener, bizType: CART.BizType = .B2H)
+  public init(clientId: Swift.String, clientSecret: Swift.String, bleVersion: CART.CARTDefs.CARTProtocolVersion, cartListener: any CART.CARTListener, bizType: CART.BizType = .B2H, bizSubType: CART.BizSubType = .NONE)
   public func StartService()
   public func setUserInfo(userKey: Swift.String, info: inout [Swift.String : Any?], listener: any CART.CARTUserListener)
   @objc deinit
@@ -131,7 +148,7 @@ extension CART.CARTManager {
   public func eventLog(listener: any CART.CARTLogListener)
 }
 extension CART.CARTManager {
-  public func backgroundBP(listener: any CART.CARTBpListener)
+  public func backgroundBP(listener: any CART.CARTBpListener, count: Swift.Int)
   public func bpStatus(listener: any CART.CARTStatusListener)
 }
 extension CART.CARTManager {
@@ -261,11 +278,11 @@ public enum CARTDefs {
   }
   public enum CalErrorCode : Swift.Int {
     case NONE
-    case STABILITY_FAILED
+    case RESERVED
     case AF_FAILED
     case NOISE_POOR
     case OUTLIER
-    case BP_FAILED
+    case BP_STABILITY_FAILED
     case SIGNAL_FAILED
     public init?(rawValue: Swift.Int)
     public typealias RawValue = Swift.Int
@@ -462,6 +479,8 @@ public struct CARTIssResult {
 }
 extension CART.BizType : Swift.Equatable {}
 extension CART.BizType : Swift.Hashable {}
+extension CART.BizSubType : Swift.Equatable {}
+extension CART.BizSubType : Swift.Hashable {}
 extension CART.DataControlStatus : Swift.Equatable {}
 extension CART.DataControlStatus : Swift.Hashable {}
 extension CART.CARTDefs.CARTProtocolVersion : Swift.Equatable {}
