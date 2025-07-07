@@ -13914,21 +13914,21 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2169,
+      "offset": 2324,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "Array",
-      "offset": 14223,
+      "offset": 15079,
       "length": 6,
       "value": "[0x00]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 18844,
+      "offset": 19700,
       "length": 5,
       "value": "false"
     },
@@ -13984,35 +13984,35 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 2525,
+      "offset": 2757,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 6226,
+      "offset": 7345,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 6692,
+      "offset": 7811,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 16838,
+      "offset": 18838,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/BLEClientV1.swift",
       "kind": "StringLiteral",
-      "offset": 16862,
+      "offset": 18862,
       "length": 2,
       "value": "\"\""
     },
@@ -15307,1274 +15307,1274 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 8179,
+      "offset": 8270,
       "length": 19,
       "value": "\"AT_CMD_RES_NORMAL\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 8207,
+      "offset": 8298,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 8265,
+      "offset": 8447,
       "length": 21,
       "value": "\"AT_CMD_RES_TYPE_ERR\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 8295,
+      "offset": 8477,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 8357,
+      "offset": 8631,
       "length": 25,
       "value": "\"AT_CMD_RES_DATA_LEN_ERR\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 8391,
+      "offset": 8665,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 8455,
+      "offset": 8823,
       "length": 27,
       "value": "\"AT_CMD_RES_DATA_RANGE_ERR\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 8491,
+      "offset": 8859,
       "length": 4,
       "value": "0x03"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 8554,
+      "offset": 9092,
       "length": 26,
       "value": "\"AT_CMD_RES_CONDITION_ERR\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 8589,
+      "offset": 9127,
       "length": 4,
       "value": "0x04"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 8647,
+      "offset": 9185,
       "length": 21,
       "value": "\"AT_CMD_RES_NULL_ERR\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 8677,
+      "offset": 9215,
       "length": 4,
       "value": "0xFF"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 8745,
+      "offset": 9283,
       "length": 22,
       "value": "\"NOTI_BACKUP_INCREASE\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 8776,
+      "offset": 9314,
       "length": 4,
       "value": "0x03"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 8834,
+      "offset": 9372,
       "length": 21,
       "value": "\"NOTI_FAILED_COMMAND\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 8864,
+      "offset": 9402,
       "length": 4,
       "value": "0x07"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 8928,
+      "offset": 9466,
       "length": 27,
       "value": "\"NOTI_BACKUP_TRANS_TIMEOUT\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 8964,
+      "offset": 9502,
       "length": 4,
       "value": "0x08"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 9014,
+      "offset": 9552,
       "length": 4,
       "value": "\"NA\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 9027,
+      "offset": 9565,
       "length": 4,
       "value": "0xFF"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 10317,
+      "offset": 10855,
       "length": 11,
       "value": "\"MCU_RESET\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 10337,
+      "offset": 10875,
       "length": 12,
       "value": "[0x00, 0xB0]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 10406,
-      "length": 21,
-      "value": "\"MAC_ADDRESS_REQUEST\""
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "Array",
-      "offset": 10436,
-      "length": 12,
-      "value": "[0x00, 0x01]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "StringLiteral",
-      "offset": 10501,
+      "offset": 10940,
       "length": 17,
       "value": "\"SYSTEM_STATUS_1\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 10527,
+      "offset": 10966,
       "length": 12,
       "value": "[0x00, 0x05]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 10593,
+      "offset": 11032,
       "length": 18,
       "value": "\"PSS_DATA_REQUEST\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 10620,
+      "offset": 11059,
       "length": 12,
       "value": "[0x00, 0x72]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 10697,
+      "offset": 11136,
       "length": 29,
       "value": "\"FUNCTIONAL_OPTION_BC_PERIOD\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 10735,
+      "offset": 11174,
       "length": 12,
       "value": "[0x00, 0x81]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 10797,
+      "offset": 11236,
       "length": 14,
       "value": "\"LOGIN_STATUS\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 10820,
+      "offset": 11259,
       "length": 12,
       "value": "[0x00, 0x92]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 10905,
+      "offset": 11344,
       "length": 37,
       "value": "\"SPO2_INITIAL_SENSOR_SETTING_REQUEST\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 10951,
+      "offset": 11390,
       "length": 12,
       "value": "[0x00, 0xAD]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 11021,
+      "offset": 11460,
       "length": 22,
       "value": "\"SELF_CHECK_VAR_START\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 11052,
+      "offset": 11491,
       "length": 12,
       "value": "[0x01, 0x04]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 11105,
+      "offset": 11544,
       "length": 5,
       "value": "\"LOG\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 11119,
+      "offset": 11558,
       "length": 12,
       "value": "[0xFF, 0xFE]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 11188,
-      "length": 12,
-      "value": "\"FW_VERSION\""
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "Array",
-      "offset": 11209,
-      "length": 12,
-      "value": "[0x00, 0x04]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "StringLiteral",
-      "offset": 11268,
-      "length": 11,
-      "value": "\"DATE_TIME\""
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "Array",
-      "offset": 11288,
-      "length": 12,
-      "value": "[0x00, 0x06]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "StringLiteral",
-      "offset": 11354,
-      "length": 18,
-      "value": "\"FW_BUILD_VERSION\""
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "Array",
-      "offset": 11381,
-      "length": 12,
-      "value": "[0x00, 0x07]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "StringLiteral",
-      "offset": 11446,
-      "length": 17,
-      "value": "\"SYSTEM_STATUS_2\""
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "Array",
-      "offset": 11472,
-      "length": 12,
-      "value": "[0x00, 0x08]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "StringLiteral",
-      "offset": 11532,
+      "offset": 11636,
       "length": 12,
       "value": "\"PPG_LED_ON\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 11553,
+      "offset": 11657,
       "length": 12,
       "value": "[0x00, 0x0B]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 11614,
+      "offset": 11718,
       "length": 13,
       "value": "\"PPG_LED_OFF\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 11636,
+      "offset": 11740,
       "length": 12,
       "value": "[0x00, 0x0C]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 11696,
-      "length": 12,
-      "value": "\"B05_STATUS\""
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "Array",
-      "offset": 11717,
-      "length": 12,
-      "value": "[0x00, 0x0D]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "StringLiteral",
-      "offset": 11778,
-      "length": 13,
-      "value": "\"B05C_STATUS\""
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "Array",
-      "offset": 11800,
-      "length": 12,
-      "value": "[0x00, 0x0E]"
-    },
-    {
-      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
-      "kind": "StringLiteral",
-      "offset": 11864,
+      "offset": 11804,
       "length": 16,
       "value": "\"BATTERY_STATUS\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 11889,
+      "offset": 11829,
       "length": 12,
       "value": "[0x00, 0x10]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 11968,
+      "offset": 11908,
       "length": 31,
       "value": "\"SENSOR_SEL_PERIODIC_CAL_SETUP\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 12008,
+      "offset": 11948,
       "length": 12,
       "value": "[0x00, 0x70]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 12073,
+      "offset": 12013,
       "length": 17,
       "value": "\"PSS_DATA_STATUS\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 12099,
+      "offset": 12039,
       "length": 12,
       "value": "[0x00, 0x71]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 12167,
+      "offset": 12107,
       "length": 20,
       "value": "\"PSS_DATA_REQUEST_2\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 12196,
+      "offset": 12136,
       "length": 12,
       "value": "[0x00, 0x7C]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 12259,
+      "offset": 12199,
       "length": 15,
       "value": "\"PSS_PARAMETER\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 12283,
+      "offset": 12223,
       "length": 12,
       "value": "[0x00, 0x73]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 12343,
+      "offset": 12283,
       "length": 12,
       "value": "\"BGC_MODE_2\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 12364,
+      "offset": 12304,
       "length": 12,
       "value": "[0x00, 0x83]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 12422,
+      "offset": 12408,
       "length": 10,
       "value": "\"RING_KEY\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 12441,
+      "offset": 12427,
       "length": 12,
       "value": "[0x00, 0x90]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 12504,
+      "offset": 12490,
       "length": 15,
       "value": "\"LOGIN_REQUEST\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 12528,
+      "offset": 12514,
       "length": 12,
       "value": "[0x00, 0x91]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 12597,
+      "offset": 12574,
+      "length": 12,
+      "value": "\"FW_VERSION\""
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "Array",
+      "offset": 12595,
+      "length": 12,
+      "value": "[0x00, 0x04]"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 12654,
+      "length": 11,
+      "value": "\"DATE_TIME\""
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "Array",
+      "offset": 12674,
+      "length": 12,
+      "value": "[0x00, 0x06]"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 12740,
+      "length": 18,
+      "value": "\"FW_BUILD_VERSION\""
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "Array",
+      "offset": 12767,
+      "length": 12,
+      "value": "[0x00, 0x07]"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 12836,
       "length": 21,
       "value": "\"BLE_DISCONNECT_SKIP\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 12627,
+      "offset": 12866,
       "length": 12,
       "value": "[0x00, 0x94]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 12688,
+      "offset": 12931,
+      "length": 17,
+      "value": "\"SYSTEM_STATUS_2\""
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "Array",
+      "offset": 12957,
+      "length": 12,
+      "value": "[0x00, 0x08]"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 13026,
+      "length": 21,
+      "value": "\"MAC_ADDRESS_REQUEST\""
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "Array",
+      "offset": 13056,
+      "length": 12,
+      "value": "[0x00, 0x01]"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 13170,
+      "length": 13,
+      "value": "\"B05C_STATUS\""
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "Array",
+      "offset": 13192,
+      "length": 12,
+      "value": "[0x00, 0x0E]"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 13305,
+      "length": 12,
+      "value": "\"B05_STATUS\""
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "Array",
+      "offset": 13326,
+      "length": 12,
+      "value": "[0x00, 0x0D]"
+    },
+    {
+      "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 13405,
       "length": 13,
       "value": "\"ISS_1_START\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 12710,
+      "offset": 13427,
       "length": 12,
       "value": "[0x00, 0xA0]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 12772,
+      "offset": 13489,
       "length": 14,
       "value": "\"ISS_1_RESULT\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 12795,
+      "offset": 13512,
       "length": 12,
       "value": "[0x00, 0xA1]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 12863,
+      "offset": 13580,
       "length": 20,
       "value": "\"ISS_1_DATA_REQUEST\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 12892,
+      "offset": 13609,
       "length": 12,
       "value": "[0x00, 0xA2]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 12962,
+      "offset": 13679,
       "length": 22,
       "value": "\"ISS_1_AUTO_CAL_SETUP\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 12993,
+      "offset": 13710,
       "length": 12,
       "value": "[0x00, 0xA3]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 13061,
+      "offset": 13778,
       "length": 20,
       "value": "\"ISS_DATA_REQUEST_2\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 13090,
+      "offset": 13807,
       "length": 12,
       "value": "[0x00, 0xAF]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 13159,
+      "offset": 13876,
       "length": 21,
       "value": "\"CONTROL_INFORMATION\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 13189,
+      "offset": 13906,
       "length": 12,
       "value": "[0x00, 0xC0]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 13253,
+      "offset": 13970,
       "length": 16,
       "value": "\"ISS_SPO2_START\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 13278,
+      "offset": 13995,
       "length": 12,
       "value": "[0x00, 0xAB]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 13343,
+      "offset": 14060,
       "length": 17,
       "value": "\"ISS_SPO2_RESULT\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 13369,
+      "offset": 14086,
       "length": 12,
       "value": "[0x00, 0xAC]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 13433,
+      "offset": 14150,
       "length": 16,
       "value": "\"ISS_SPO2_SETUP\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 13458,
+      "offset": 14175,
       "length": 12,
       "value": "[0x00, 0xAE]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 13525,
+      "offset": 14242,
       "length": 19,
       "value": "\"ISS_SPO2_SETUP_SS\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 13553,
+      "offset": 14270,
       "length": 12,
       "value": "[0x01, 0x14]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 13624,
+      "offset": 14341,
       "length": 23,
       "value": "\"ISS_DATA_REQUEST_IRWD\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 13656,
+      "offset": 14373,
       "length": 12,
       "value": "[0x01, 0x00]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 13732,
+      "offset": 14449,
       "length": 28,
       "value": "\"ISS_SPO2_DATA_REQUEST_IRWD\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 13769,
+      "offset": 14486,
       "length": 12,
       "value": "[0x01, 0x02]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 13833,
+      "offset": 14550,
       "length": 16,
       "value": "\"PSS_SPO2_START\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 13858,
+      "offset": 14575,
       "length": 12,
       "value": "[0x00, 0x7B]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 13926,
+      "offset": 14643,
       "length": 20,
       "value": "\"PSS_SPO2_PARAMETER\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 13955,
+      "offset": 14672,
       "length": 12,
       "value": "[0x00, 0x77]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 14025,
+      "offset": 14742,
       "length": 22,
       "value": "\"PSS_SPO2_DATA_STATUS\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 14056,
+      "offset": 14773,
       "length": 12,
       "value": "[0x00, 0x78]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 14122,
+      "offset": 14839,
       "length": 18,
       "value": "\"PSS_SPO2_REQUEST\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 14149,
+      "offset": 14866,
       "length": 12,
       "value": "[0x00, 0x79]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 14213,
+      "offset": 14930,
       "length": 16,
       "value": "\"PSS_SPO2_SETUP\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 14238,
+      "offset": 14955,
       "length": 12,
       "value": "[0x00, 0x7A]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 14314,
+      "offset": 15031,
       "length": 28,
       "value": "\"PSS_SPO2_DATA_REQUEST_IRWD\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 14351,
+      "offset": 15068,
       "length": 12,
       "value": "[0x01, 0x03]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 14422,
+      "offset": 15139,
       "length": 23,
       "value": "\"PSS_DATA_REQUEST_IRWD\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 14454,
+      "offset": 15171,
       "length": 12,
       "value": "[0x01, 0x01]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 14516,
+      "offset": 15233,
       "length": 14,
       "value": "\"BP_CAL_START\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 14539,
+      "offset": 15256,
       "length": 12,
       "value": "[0x00, 0xE0]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 14602,
+      "offset": 15319,
       "length": 15,
       "value": "\"BP_CAL_RESULT\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 14626,
+      "offset": 15343,
       "length": 12,
       "value": "[0x00, 0xE1]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 14695,
+      "offset": 15412,
       "length": 21,
       "value": "\"BP_CAL_DATA_REQUEST\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 14725,
+      "offset": 15442,
       "length": 12,
       "value": "[0x00, 0xE2]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 14789,
+      "offset": 15506,
       "length": 16,
       "value": "\"BP_CAL_START_2\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 14814,
+      "offset": 15531,
       "length": 12,
       "value": "[0x00, 0xE3]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 14885,
+      "offset": 15602,
       "length": 23,
       "value": "\"BP_CAL_DATA_REQUEST_2\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 14917,
+      "offset": 15634,
       "length": 12,
       "value": "[0x00, 0xE4]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 14976,
+      "offset": 15693,
       "length": 11,
       "value": "\"BGC_START\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 14996,
+      "offset": 15713,
       "length": 12,
       "value": "[0x00, 0xD0]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 15054,
+      "offset": 15771,
       "length": 10,
       "value": "\"BGC_STOP\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 15073,
+      "offset": 15790,
       "length": 12,
       "value": "[0x00, 0xD1]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 15137,
+      "offset": 15854,
       "length": 16,
       "value": "\"B05C_BGC_START\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 15162,
+      "offset": 15879,
       "length": 12,
       "value": "[0x00, 0xD2]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 15234,
+      "offset": 15951,
       "length": 24,
       "value": "\"SELF_CHECK_VAR_REQUEST\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 15267,
+      "offset": 15984,
       "length": 12,
       "value": "[0x01, 0x05]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 15342,
+      "offset": 16059,
       "length": 27,
       "value": "\"SELF_CHECK_VAR_CHECK_DATA\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 15378,
+      "offset": 16095,
       "length": 12,
       "value": "[0x01, 0x06]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 15449,
+      "offset": 16166,
       "length": 23,
       "value": "\"BGC_DATA_CAPTURE_TIME\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 15481,
+      "offset": 16198,
       "length": 12,
       "value": "[0x00, 0x0A]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 15545,
+      "offset": 16262,
       "length": 16,
       "value": "\"BLE_DISCONNECT\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 15570,
+      "offset": 16287,
       "length": 12,
       "value": "[0x00, 0x93]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 15622,
+      "offset": 16339,
       "length": 4,
       "value": "\"NA\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "Array",
-      "offset": 15635,
+      "offset": 16352,
       "length": 12,
       "value": "[0xFF, 0xFF]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 17247,
+      "offset": 17964,
       "length": 18,
       "value": "\"SELF_CHECK_START\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 17274,
+      "offset": 17991,
       "length": 4,
       "value": "0xC1"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 17346,
+      "offset": 18063,
       "length": 28,
       "value": "\"SELF_CHECK_START_EXPANSION\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 17383,
+      "offset": 18100,
       "length": 4,
       "value": "0xCB"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 17457,
+      "offset": 18174,
       "length": 30,
       "value": "\"SELF_CHECK_START_EXPANSION_2\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 17496,
+      "offset": 18213,
       "length": 4,
       "value": "0xCC"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 17565,
+      "offset": 18282,
       "length": 25,
       "value": "\"SELF_CHECK_DATA_REQUEST\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 17599,
+      "offset": 18316,
       "length": 4,
       "value": "0xC2"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 17670,
+      "offset": 18387,
       "length": 27,
       "value": "\"SELF_CHECK_DATA_REQUEST_2\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 17706,
+      "offset": 18423,
       "length": 4,
       "value": "0xBD"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 17772,
+      "offset": 18489,
       "length": 21,
       "value": "\"SELF_CHECK_O2_START\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 17802,
+      "offset": 18519,
       "length": 4,
       "value": "0xC3"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 17880,
+      "offset": 18597,
       "length": 33,
       "value": "\"BACKGROUND_CHECK_DATA_REQUEST_2\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 17922,
+      "offset": 18639,
       "length": 4,
       "value": "0xBE"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 17972,
+      "offset": 18689,
       "length": 6,
       "value": "\"STOP\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 17987,
+      "offset": 18704,
       "length": 4,
       "value": "0xC5"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 18065,
+      "offset": 19059,
       "length": 34,
       "value": "\"BACKGROUND_CHECK_BP_DATA_REQUEST\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 18108,
+      "offset": 19102,
       "length": 4,
       "value": "0xC6"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 18188,
+      "offset": 19182,
       "length": 36,
       "value": "\"BACKGROUND_CHECK_SPO2_DATA_REQUEST\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 18233,
+      "offset": 19227,
       "length": 4,
       "value": "0xC7"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 18295,
+      "offset": 19289,
       "length": 17,
       "value": "\"CHECK_DATA_PASS\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 18321,
+      "offset": 19315,
       "length": 4,
       "value": "0xCA"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 18382,
+      "offset": 19376,
       "length": 17,
       "value": "\"CHECK_DATA_FAIL\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 18408,
+      "offset": 19402,
       "length": 4,
       "value": "0xCE"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 18476,
+      "offset": 19470,
       "length": 24,
       "value": "\"EVENT_LOG_DATA_REQUEST\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 18509,
+      "offset": 19503,
       "length": 4,
       "value": "0xD2"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 18579,
+      "offset": 19573,
       "length": 26,
       "value": "\"EVENT_LOG_DATA_REQUEST_2\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 18614,
+      "offset": 19608,
       "length": 4,
       "value": "0xD3"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 18679,
+      "offset": 19673,
       "length": 21,
       "value": "\"EVENT_LOG_DATA_PASS\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 18709,
+      "offset": 19703,
       "length": 4,
       "value": "0xDA"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 18774,
+      "offset": 19768,
       "length": 21,
       "value": "\"EVENT_LOG_DATA_FAIL\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 18804,
+      "offset": 19798,
       "length": 4,
       "value": "0xDE"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 18863,
+      "offset": 19857,
       "length": 14,
       "value": "\"ISS_SPO2_ACK\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 18886,
+      "offset": 19880,
       "length": 4,
       "value": "0xB1"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 18944,
+      "offset": 19938,
       "length": 14,
       "value": "\"PSS_SPO2_ACK\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 18967,
+      "offset": 19961,
       "length": 4,
       "value": "0xB3"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 19032,
+      "offset": 20026,
       "length": 20,
       "value": "\"BP_CALIBRATION_ACK\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 19061,
+      "offset": 20055,
       "length": 4,
       "value": "0xB5"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 19126,
+      "offset": 20120,
       "length": 21,
       "value": "\"BP_CALIBRATION_NACK\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 19156,
+      "offset": 20150,
       "length": 4,
       "value": "0xB6"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 19230,
+      "offset": 20224,
       "length": 30,
       "value": "\"BACKGROUND_CHECK_BP_DATA_ACK\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 19269,
+      "offset": 20263,
       "length": 4,
       "value": "0xB7"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 19345,
+      "offset": 20339,
       "length": 32,
       "value": "\"BACKGROUND_CHECK_SPO2_DATA_ACK\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 19386,
+      "offset": 20380,
       "length": 4,
       "value": "0xB9"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 19435,
+      "offset": 20429,
       "length": 4,
       "value": "\"NA\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/Defines\/CARTProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 19448,
+      "offset": 20442,
       "length": 4,
       "value": "0xFF"
     },
@@ -16777,7 +16777,7 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Controls\/V1\/CARTBatteryStatusV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 360,
+      "offset": 362,
       "length": 4,
       "value": "true"
     },
@@ -17246,84 +17246,84 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 2210,
+      "offset": 2458,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "Array",
-      "offset": 2239,
+      "offset": 2487,
       "length": 6,
       "value": "[0x00]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 2267,
+      "offset": 2515,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 2293,
+      "offset": 2541,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 2973,
+      "offset": 3221,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "Array",
-      "offset": 3002,
+      "offset": 3250,
       "length": 6,
       "value": "[0x00]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 3030,
+      "offset": 3278,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 3056,
+      "offset": 3304,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 5065,
+      "offset": 5585,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "Array",
-      "offset": 5094,
+      "offset": 5693,
       "length": 6,
       "value": "[0x00]"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 5122,
+      "offset": 5768,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Interfaces\/BLEDataInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 5148,
+      "offset": 5840,
       "length": 4,
       "value": "0x00"
     },
@@ -17638,14 +17638,14 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/DataSource\/Local\/Database\/CARTEncryptedSQLiteManager.swift",
       "kind": "StringLiteral",
-      "offset": 2231,
+      "offset": 2223,
       "length": 23,
       "value": "\"cart_background_bp.db\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/DataSource\/Local\/Database\/CARTEncryptedSQLiteManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7917,
+      "offset": 7011,
       "length": 5,
       "value": "false"
     },
@@ -17666,7 +17666,7 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/DataSource\/Local\/SecureBackgroundBPDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8603,
+      "offset": 6327,
       "length": 5,
       "value": "false"
     },
@@ -19822,42 +19822,42 @@
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/Enumurations\/CARTServiceUUID.swift",
       "kind": "StringLiteral",
-      "offset": 158,
+      "offset": 272,
       "length": 38,
       "value": "\"63DAA245-C991-4141-B9B1-AB9DC200D57C\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/Enumurations\/CARTServiceUUID.swift",
       "kind": "StringLiteral",
-      "offset": 281,
+      "offset": 395,
       "length": 38,
       "value": "\"63DAA246-C991-4141-B9B1-AB9DC200D57C\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/Enumurations\/CARTServiceUUID.swift",
       "kind": "StringLiteral",
-      "offset": 340,
+      "offset": 530,
       "length": 38,
       "value": "\"63DAA247-C991-4141-B9B1-AB9DC200D57C\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/Enumurations\/CARTServiceUUID.swift",
       "kind": "StringLiteral",
-      "offset": 401,
+      "offset": 591,
       "length": 38,
       "value": "\"63DA5000-C991-4141-B9B1-AB9DC200D57C\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/Enumurations\/CARTServiceUUID.swift",
       "kind": "StringLiteral",
-      "offset": 461,
+      "offset": 726,
       "length": 38,
       "value": "\"63DA5001-C991-4141-B9B1-AB9DC200D57C\""
     },
     {
       "filePath": "\/Users\/hugh\/cartsdk_ios\/Projects\/CART\/Sources\/Models\/Enumurations\/CARTServiceUUID.swift",
       "kind": "StringLiteral",
-      "offset": 525,
+      "offset": 790,
       "length": 38,
       "value": "\"00002902-0000-1000-8000-00805F9B34FB\""
     },
