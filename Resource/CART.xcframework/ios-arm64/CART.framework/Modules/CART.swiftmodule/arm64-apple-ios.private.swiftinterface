@@ -102,10 +102,6 @@ public struct BackgroundBPData : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public protocol CARTMangerServiceProtocol {
-  func StartService()
-  func setUserInfo(userKey: Swift.String, info: inout [Swift.String : Any?], listener: any CART.CARTUserListener)
-}
 @objc public class CARTManager : ObjectiveC.NSObject, CART.CARTMangerServiceProtocol {
   public init(clientId: Swift.String, clientSecret: Swift.String, bleVersion: CART.CARTDefs.CARTProtocolVersion, cartListener: any CART.CARTListener, bizType: CART.BizType = .B2H, bizSubType: CART.BizSubType = .NONE)
   public func StartService()
@@ -154,6 +150,28 @@ extension CART.CARTManager {
 extension CART.CARTManager {
   public func collectStart(listener: any CART.CARTCmdListener, time: Swift.Int, count: Swift.Int)
   public func collectStop(listener: any CART.CARTCmdListener)
+}
+public protocol CARTMangerServiceProtocol {
+  func setUserInfo(userKey: Swift.String, info: inout [Swift.String : Any?], listener: any CART.CARTUserListener)
+  func scanStart(listener: any CART.CARTScanListener)
+  func scanStop()
+  func connectSerial(serialId: Swift.String, isReg: Swift.Bool)
+  func connect(macAddress: Swift.String, isReg: Swift.Bool)
+  func connect(cartName: Swift.String, isReg: Swift.Bool)
+  func disConnect()
+  func deviceInfo() -> CART.CARTDeviceInfo?
+  func deviceInfoFromServer() -> CART.CARTDeviceInfo?
+  func stop()
+  func batteryInfo(_ listener: (any CART.CARTBatteryListener)?)
+  func systemStatus(listener: any CART.CARTStatusListener)
+  func calibration(listener: any CART.CARTCalListener)
+  func iss(issListener: any CART.CARTISSListener)
+  func pss(pssListener: any CART.CARTPSSListener)
+  func eventLog(listener: any CART.CARTLogListener)
+  func bpStatus(listener: any CART.CARTStatusListener)
+  func backgroundBP(listener: any CART.CARTBpListener, count: Swift.Int)
+  func collectStart(listener: any CART.CARTCmdListener, time: Swift.Int, count: Swift.Int)
+  func collectStop(listener: any CART.CARTCmdListener)
 }
 public protocol CARTBpListener {
   func bpCount(count: Swift.Int)
@@ -414,6 +432,21 @@ public enum CARTFwResponse : Swift.UInt8 {
   public var rawValue: Swift.UInt8 {
     get
   }
+}
+public enum APIErrorCode : Swift.Error {
+  case noRegistredDevice
+  case alreadyLogoutToken
+  case loginHistoryNotFound
+  case loginExpired
+  case loginCodeNotValified
+  case unknownError(Swift.String)
+  case httpError(Swift.Int)
+}
+@_hasMissingDesignatedInitializers final public class APILogger : Swift.Sendable {
+  public static let shared: CART.APILogger
+  final public func logRequest(_ request: Foundation.URLRequest)
+  final public func logResponse(_ response: Foundation.HTTPURLResponse?, data: Foundation.Data?, error: (any Swift.Error)?)
+  @objc deinit
 }
 public struct CARTBpResult {
   public var success: Swift.Bool
