@@ -6684,289 +6684,9 @@
         "name": "GRDB",
         "printedName": "GRDB",
         "declKind": "Import",
-        "moduleName": "CART"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "CARTDBManager",
-        "printedName": "CARTDBManager",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CARTDBManager",
-                "printedName": "CART.CARTDBManager",
-                "usr": "s:4CART13CARTDBManagerC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:4CART13CARTDBManagerC6sharedACvpZ",
-            "mangledName": "$s4CART13CARTDBManagerC6sharedACvpZ",
-            "moduleName": "CART",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CARTDBManager",
-                    "printedName": "CART.CARTDBManager",
-                    "usr": "s:4CART13CARTDBManagerC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4CART13CARTDBManagerC6sharedACvgZ",
-                "mangledName": "$s4CART13CARTDBManagerC6sharedACvgZ",
-                "moduleName": "CART",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "createTable",
-            "printedName": "createTable()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4CART13CARTDBManagerC11createTableyyKF",
-            "mangledName": "$s4CART13CARTDBManagerC11createTableyyKF",
-            "moduleName": "CART",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "insertBackgroundBPData",
-            "printedName": "insertBackgroundBPData(packetList:bizType:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4CART13CARTDBManagerC22insertBackgroundBPData10packetList7bizTypeSSSaySSG_SStKF",
-            "mangledName": "$s4CART13CARTDBManagerC22insertBackgroundBPData10packetList7bizTypeSSSaySSG_SStKF",
-            "moduleName": "CART",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "deleteBackgroundBPData",
-            "printedName": "deleteBackgroundBPData(id:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4CART13CARTDBManagerC22deleteBackgroundBPData2idySS_tKF",
-            "mangledName": "$s4CART13CARTDBManagerC22deleteBackgroundBPData2idySS_tKF",
-            "moduleName": "CART",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "fetchAllBackgroundBPData",
-            "printedName": "fetchAllBackgroundBPData()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[CART.NewBackgroundBPDataBaseDTO]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[CART.NewBackgroundBPDataBaseDTO]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NewBackgroundBPDataBaseDTO",
-                        "printedName": "CART.NewBackgroundBPDataBaseDTO",
-                        "usr": "s:4CART26NewBackgroundBPDataBaseDTOV"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4CART13CARTDBManagerC24fetchAllBackgroundBPDataSayAA03NeweF7BaseDTOVGSgyKF",
-            "mangledName": "$s4CART13CARTDBManagerC24fetchAllBackgroundBPDataSayAA03NeweF7BaseDTOVGSgyKF",
-            "moduleName": "CART",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "fetchBackgroundBPData",
-            "printedName": "fetchBackgroundBPData(id:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CART.NewBackgroundBPDataBaseDTO?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NewBackgroundBPDataBaseDTO",
-                    "printedName": "CART.NewBackgroundBPDataBaseDTO",
-                    "usr": "s:4CART26NewBackgroundBPDataBaseDTOV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4CART13CARTDBManagerC21fetchBackgroundBPData2idAA03NewdE7BaseDTOVSgSS_tKF",
-            "mangledName": "$s4CART13CARTDBManagerC21fetchBackgroundBPData2idAA03NewdE7BaseDTOVSgSS_tKF",
-            "moduleName": "CART",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "deletePacketLogData",
-            "printedName": "deletePacketLogData(id:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4CART13CARTDBManagerC19deletePacketLogData2idySS_tKF",
-            "mangledName": "$s4CART13CARTDBManagerC19deletePacketLogData2idySS_tKF",
-            "moduleName": "CART",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:4CART13CARTDBManagerC",
-        "mangledName": "$s4CART13CARTDBManagerC",
         "moduleName": "CART",
         "declAttributes": [
           "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
         ]
       },
       {
@@ -7090,262 +6810,9 @@
         "name": "GRDB",
         "printedName": "GRDB",
         "declKind": "Import",
-        "moduleName": "CART"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NewBackgroundBPDataBaseDTO",
-        "printedName": "NewBackgroundBPDataBaseDTO",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "databaseTableName",
-            "printedName": "databaseTableName",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:4CART26NewBackgroundBPDataBaseDTOV17databaseTableNameSSvpZ",
-            "mangledName": "$s4CART26NewBackgroundBPDataBaseDTOV17databaseTableNameSSvpZ",
-            "moduleName": "CART",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4CART26NewBackgroundBPDataBaseDTOV17databaseTableNameSSvgZ",
-                "mangledName": "$s4CART26NewBackgroundBPDataBaseDTOV17databaseTableNameSSvgZ",
-                "moduleName": "CART",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4CART26NewBackgroundBPDataBaseDTOV17databaseTableNameSSvsZ",
-                "mangledName": "$s4CART26NewBackgroundBPDataBaseDTOV17databaseTableNameSSvsZ",
-                "moduleName": "CART",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4CART26NewBackgroundBPDataBaseDTOV17databaseTableNameSSvMZ",
-                "mangledName": "$s4CART26NewBackgroundBPDataBaseDTOV17databaseTableNameSSvMZ",
-                "moduleName": "CART",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NewBackgroundBPDataBaseDTO",
-                "printedName": "CART.NewBackgroundBPDataBaseDTO",
-                "usr": "s:4CART26NewBackgroundBPDataBaseDTOV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:4CART26NewBackgroundBPDataBaseDTOV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s4CART26NewBackgroundBPDataBaseDTOV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "CART",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4CART26NewBackgroundBPDataBaseDTOV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s4CART26NewBackgroundBPDataBaseDTOV6encode2toys7Encoder_p_tKF",
-            "moduleName": "CART",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:4CART26NewBackgroundBPDataBaseDTOV",
-        "mangledName": "$s4CART26NewBackgroundBPDataBaseDTOV",
         "moduleName": "CART",
         "declAttributes": [
           "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "FetchableRecord",
-            "printedName": "FetchableRecord",
-            "usr": "s:4GRDB15FetchableRecordP",
-            "mangledName": "$s4GRDB15FetchableRecordP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "PersistableRecord",
-            "printedName": "PersistableRecord",
-            "usr": "s:4GRDB17PersistableRecordP",
-            "mangledName": "$s4GRDB17PersistableRecordP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MutablePersistableRecord",
-            "printedName": "MutablePersistableRecord",
-            "usr": "s:4GRDB24MutablePersistableRecordP",
-            "mangledName": "$s4GRDB24MutablePersistableRecordP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "EncodableRecord",
-            "printedName": "EncodableRecord",
-            "usr": "s:4GRDB15EncodableRecordP",
-            "mangledName": "$s4GRDB15EncodableRecordP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "TableRecord",
-            "printedName": "TableRecord",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Columns",
-                "printedName": "Columns",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "DatabaseComponents",
-                "printedName": "DatabaseComponents",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Swift.Never.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Never",
-                        "printedName": "Swift.Never",
-                        "usr": "s:s5NeverO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:4GRDB11TableRecordP",
-            "mangledName": "$s4GRDB11TableRecordP"
-          }
         ]
       },
       {
@@ -7363,7 +6830,10 @@
         "name": "GRDB",
         "printedName": "GRDB",
         "declKind": "Import",
-        "moduleName": "CART"
+        "moduleName": "CART",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -29223,28 +28693,28 @@
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/Database\/CARTDBManager.swift",
       "kind": "StringLiteral",
-      "offset": 344,
+      "offset": 353,
       "length": 24,
       "value": "\"new_background_bp_data\""
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/Database\/CARTDBManager.swift",
       "kind": "StringLiteral",
-      "offset": 396,
+      "offset": 405,
       "length": 16,
       "value": "\"packetLog_data\""
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/Database\/CARTDBManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6351,
+      "offset": 6311,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/Database\/DTO\/PacketLogDataBaseDTO.swift",
       "kind": "IntegerLiteral",
-      "offset": 860,
+      "offset": 869,
       "length": 4,
       "value": "1000"
     },

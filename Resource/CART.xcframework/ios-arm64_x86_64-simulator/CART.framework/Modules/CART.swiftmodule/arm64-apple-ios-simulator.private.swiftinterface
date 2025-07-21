@@ -9,7 +9,6 @@ import Compression
 import CoreBluetooth
 import CryptoKit
 import Foundation
-import GRDB
 import Network
 import SQLite3
 import Security
@@ -224,28 +223,7 @@ public struct B2CTokenResponseDTO : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers public class CARTDBManager {
-  public static let shared: CART.CARTDBManager
-  public func createTable() throws
-  @objc deinit
-}
-extension CART.CARTDBManager {
-  public func insertBackgroundBPData(packetList: [Swift.String], bizType: Swift.String) throws -> Swift.String
-  public func deleteBackgroundBPData(id: Swift.String) throws
-  public func fetchAllBackgroundBPData() throws -> [CART.NewBackgroundBPDataBaseDTO]?
-  public func fetchBackgroundBPData(id: Swift.String) throws -> CART.NewBackgroundBPDataBaseDTO?
-}
-extension CART.CARTDBManager {
-  public func deletePacketLogData(id: Swift.String) throws
-}
 public struct BackgroundBPDTO : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct NewBackgroundBPDataBaseDTO : Swift.Codable, GRDB.FetchableRecord, GRDB.PersistableRecord {
-  public static var databaseTableName: Swift.String
-  public typealias Columns = Swift.Never
-  public typealias DatabaseComponents = Swift.Never.Type
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
