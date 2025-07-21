@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CART-Swift.h</key>
 		<data>
-		2ufndMq65X6PUIP+BfFOZO8GkzI=
+		D6KyGYBjHwJnjV/kuEAlxvpn8Zk=
 		</data>
 		<key>Headers/CART.h</key>
 		<data>
@@ -18,27 +18,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7+ww/VkjVMZ1pLX85SDjngvREtU=
+		2KcBF+vzJ2rGHNX7NMxnZBYI9+s=
 		</data>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		V8vw4AyO4NI9DR7IeztfNvvjE7o=
+		DHun5ksdNwWTLuSkSkw0OHui8YU=
 		</data>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		r6TX+afCvzCIRjcF3Or06vnqdKg=
+		XLVHPbQWbc2TYFV49RobLFDR3Bk=
 		</data>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		wJS9H/ui8wYNFzA1Xtz5g56XjFI=
+		p/Eof5JP4H0H4qhBukjq36w7GO0=
 		</data>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		r6TX+afCvzCIRjcF3Or06vnqdKg=
+		XLVHPbQWbc2TYFV49RobLFDR3Bk=
 		</data>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		SFZhQFcr5BZkMV+8z+v8XESDE1c=
+		DuuHsVwEvpCnJ6BXyx6F6dRaEnc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -57,21 +57,13 @@
 	<dict>
 		<key>Headers/CART-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2ufndMq65X6PUIP+BfFOZO8GkzI=
-			</data>
 			<key>hash2</key>
 			<data>
-			QG4tUvLjWpGnYPNmG2ZcqS+j6cjwdH10c/Fb/2pY7u8=
+			r5DYomdjj2+RfxYhDX0mUuFgzh2lO/qVXGmrXl9ciHA=
 			</data>
 		</dict>
 		<key>Headers/CART.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pa48ZTm2bPoodyZ4OtxyaNZtETE=
-			</data>
 			<key>hash2</key>
 			<data>
 			exABAb53P8DhasR/BHdNCX76OxWpYwI1zwOVoSi3Ia4=
@@ -79,10 +71,6 @@
 		</dict>
 		<key>Headers/CARTVSPService.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uvzf4QFCdoIHXho8mV9Yvub3FUU=
-			</data>
 			<key>hash2</key>
 			<data>
 			P0zhlNNtg6FHS+6EGlxTSKr1xxO7iocYD5zyTXdWhr0=
@@ -90,65 +78,41 @@
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			V8vw4AyO4NI9DR7IeztfNvvjE7o=
-			</data>
 			<key>hash2</key>
 			<data>
-			eiwQos0qjNiYYOM841dN/9t18VHBqm+lsEYavn2LL6Y=
+			K7alBR0tyRXJYZ7Jbb1ShxYrn4TNzZtYgmcAzJTCJCk=
 			</data>
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			r6TX+afCvzCIRjcF3Or06vnqdKg=
-			</data>
 			<key>hash2</key>
 			<data>
-			4IN7T/YpMAHRzMfDssvG+jDkAZvnucKNfQBLUJ/O6xQ=
+			g3Mmb7RR1Sa4z/De4ofDt82AQ+0InVC2Tdux0xnD2Uc=
 			</data>
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wJS9H/ui8wYNFzA1Xtz5g56XjFI=
-			</data>
 			<key>hash2</key>
 			<data>
-			c/nDNA298LpBJ+rMRc+sdzOctmehF+mB2HhrztTfbbM=
+			eg05CZTE+q0vLH5yjKBCX+Ho/akxiojDRP/22avesXU=
 			</data>
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			r6TX+afCvzCIRjcF3Or06vnqdKg=
-			</data>
 			<key>hash2</key>
 			<data>
-			4IN7T/YpMAHRzMfDssvG+jDkAZvnucKNfQBLUJ/O6xQ=
+			g3Mmb7RR1Sa4z/De4ofDt82AQ+0InVC2Tdux0xnD2Uc=
 			</data>
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SFZhQFcr5BZkMV+8z+v8XESDE1c=
-			</data>
 			<key>hash2</key>
 			<data>
-			xJ5MehuqPq2li3t1uLVomVeeRqFILBMDq0VPHiDA9Q4=
+			5GZRX/7YxYe/JsiRLLo0Wbf+fUZWdcJdEuIgFso6MtQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			G72lNdCFFpHDrqM9uvQml0a0iXg=
-			</data>
 			<key>hash2</key>
 			<data>
 			r9swnViuRxWZoYyrV7pgUHLpE5pGPIgrS4IIDIZBhJc=
@@ -156,10 +120,6 @@
 		</dict>
 		<key>README.md</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nbC71oo9GqEd44gdgAIV/jUj+vI=
-			</data>
 			<key>hash2</key>
 			<data>
 			HtKMHHmanrd4x8t3BUfWAp6Erm8HGqMbNk4qwVS/Bkc=
@@ -167,10 +127,6 @@
 		</dict>
 		<key>TestPlan.xctestplan</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iU7AZ8Z+iwk/Fpw1PfJGh7NwGxY=
-			</data>
 			<key>hash2</key>
 			<data>
 			9iejN8NEFzfd6v7nly+qS/Qg+KoeOVNPA+dg6RK4oHw=
