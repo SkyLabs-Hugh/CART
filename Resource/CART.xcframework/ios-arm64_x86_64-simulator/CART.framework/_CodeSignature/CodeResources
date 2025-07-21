@@ -77,6 +77,10 @@
 	<dict>
 		<key>Headers/CART-Swift.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			jMBsSfhtx+hnLcCFaBRF4cythJ8=
+			</data>
 			<key>hash2</key>
 			<data>
 			Y7wl6OmVpqKIDvdL/5zT4D1GlV0DFA5v12JeygmR7O4=
@@ -84,6 +88,10 @@
 		</dict>
 		<key>Headers/CART.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			pa48ZTm2bPoodyZ4OtxyaNZtETE=
+			</data>
 			<key>hash2</key>
 			<data>
 			exABAb53P8DhasR/BHdNCX76OxWpYwI1zwOVoSi3Ia4=
@@ -91,6 +99,10 @@
 		</dict>
 		<key>Headers/CARTVSPService.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			uvzf4QFCdoIHXho8mV9Yvub3FUU=
+			</data>
 			<key>hash2</key>
 			<data>
 			P0zhlNNtg6FHS+6EGlxTSKr1xxO7iocYD5zyTXdWhr0=
@@ -98,6 +110,10 @@
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			DHun5ksdNwWTLuSkSkw0OHui8YU=
+			</data>
 			<key>hash2</key>
 			<data>
 			K7alBR0tyRXJYZ7Jbb1ShxYrn4TNzZtYgmcAzJTCJCk=
@@ -105,6 +121,10 @@
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			E0D+l59I45cW9d5xmuDx9ohySsw=
+			</data>
 			<key>hash2</key>
 			<data>
 			JcGEGQXmVoXKcHk6AHBEOReXC6hwzGVS0DeOrYLeMlE=
@@ -112,6 +132,10 @@
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			E5INZYFOmH182ZQV9RRbdeW8kJc=
+			</data>
 			<key>hash2</key>
 			<data>
 			mKsj+Uym1Wx45TbIQZ0eVn8ujgYACaxDbd3rqv+dNpI=
@@ -119,6 +143,10 @@
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			E0D+l59I45cW9d5xmuDx9ohySsw=
+			</data>
 			<key>hash2</key>
 			<data>
 			JcGEGQXmVoXKcHk6AHBEOReXC6hwzGVS0DeOrYLeMlE=
@@ -126,6 +154,10 @@
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			6hd9FrxOQCMPPkojHzDxDxwTYdY=
+			</data>
 			<key>hash2</key>
 			<data>
 			KQwUsnUOL6MKVqMdCvddlax6GTI0Ybk/6qjIiveUADo=
@@ -133,6 +165,10 @@
 		</dict>
 		<key>Modules/CART.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			DHun5ksdNwWTLuSkSkw0OHui8YU=
+			</data>
 			<key>hash2</key>
 			<data>
 			K7alBR0tyRXJYZ7Jbb1ShxYrn4TNzZtYgmcAzJTCJCk=
@@ -140,6 +176,10 @@
 		</dict>
 		<key>Modules/CART.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			KvD6SsTESVRxUeJi21EXAALWLWQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			rqKNd0SD2Rr7yXiEi+qmpBr17EuUcSJ7xU1hDZbHY+I=
@@ -147,6 +187,10 @@
 		</dict>
 		<key>Modules/CART.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			GdSTFTaRA8wZ7zasuIUG5i49t/M=
+			</data>
 			<key>hash2</key>
 			<data>
 			4FYTUsLk9EqugnBp/67sQ+QYxduXhAAVHRJQfmFkmoI=
@@ -154,6 +198,10 @@
 		</dict>
 		<key>Modules/CART.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			KvD6SsTESVRxUeJi21EXAALWLWQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			rqKNd0SD2Rr7yXiEi+qmpBr17EuUcSJ7xU1hDZbHY+I=
@@ -161,6 +209,10 @@
 		</dict>
 		<key>Modules/CART.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			2fLeiAMHmCa84NWIH1DNiRWxE+w=
+			</data>
 			<key>hash2</key>
 			<data>
 			ZiJ8M9fcE6BSukt8GtEy44ElimNwdlCWUtuimmul3lU=
@@ -168,6 +220,10 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			G72lNdCFFpHDrqM9uvQml0a0iXg=
+			</data>
 			<key>hash2</key>
 			<data>
 			r9swnViuRxWZoYyrV7pgUHLpE5pGPIgrS4IIDIZBhJc=
@@ -175,6 +231,10 @@
 		</dict>
 		<key>README.md</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			nbC71oo9GqEd44gdgAIV/jUj+vI=
+			</data>
 			<key>hash2</key>
 			<data>
 			HtKMHHmanrd4x8t3BUfWAp6Erm8HGqMbNk4qwVS/Bkc=
@@ -182,6 +242,10 @@
 		</dict>
 		<key>TestPlan.xctestplan</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			iU7AZ8Z+iwk/Fpw1PfJGh7NwGxY=
+			</data>
 			<key>hash2</key>
 			<data>
 			9iejN8NEFzfd6v7nly+qS/Qg+KoeOVNPA+dg6RK4oHw=
