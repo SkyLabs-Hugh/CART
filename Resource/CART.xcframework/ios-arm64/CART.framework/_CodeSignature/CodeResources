@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CART-Swift.h</key>
 		<data>
-		D6KyGYBjHwJnjV/kuEAlxvpn8Zk=
+		theQhFqtXSD53uP3ljixZ2jQyS4=
 		</data>
 		<key>Headers/CART.h</key>
 		<data>
@@ -18,27 +18,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2KcBF+vzJ2rGHNX7NMxnZBYI9+s=
+		hg7DIJTFzTZZRbEbsa8u/z9SXmo=
 		</data>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Z2dwHcTeqpcgqzLMbkJKI+P1y0Q=
+		pvESP4EVEP+D+pWDeeQkopuhaDU=
 		</data>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		+msIh1U1SyK7F+nLWCMAkzfcZTE=
+		hnZoJuPY/aMpePPB9WNzlNbEYrk=
 		</data>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		5/1vgJdxAAOYvL1MLNOPOlZRVYM=
+		vW24POYHli9FHTWghFCbl9sBko0=
 		</data>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		+msIh1U1SyK7F+nLWCMAkzfcZTE=
+		hnZoJuPY/aMpePPB9WNzlNbEYrk=
 		</data>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		zOmLnaK40h7R5r+6vweqn3yUAq8=
+		B7wa6d/5lBCUUg7CiU/y5JHTbVY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,7 +59,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r5DYomdjj2+RfxYhDX0mUuFgzh2lO/qVXGmrXl9ciHA=
+			qB0WBaB9BR1lLDEdtdLLbHShZd7N30UzkoaTbjOXSYc=
 			</data>
 		</dict>
 		<key>Headers/CART.h</key>
@@ -80,35 +80,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fcioRgDQ8vobr6bS/tLjqQPBBnXjSy7IZhkb38wuapY=
+			opJqdKHh3LUkYn+wXDaP/Bk813rimugvd/E2Sw6LdzI=
 			</data>
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yFj4nqCqawFyefIurIjATVsYV2m8cdl2Z38NrLqSE9g=
+			LxBZomDJ0dfe3UQ5YihWkynONK9gaC+UVXjgPhnI8Gk=
 			</data>
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hm45+oa8VZzSOnzVQEl7M/tfaHsWwSrF0SUoy7SrdnA=
+			6WmCY/2uanMF3/0Iwr540v9IDWv/b69A91xpdqBsZaY=
 			</data>
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yFj4nqCqawFyefIurIjATVsYV2m8cdl2Z38NrLqSE9g=
+			LxBZomDJ0dfe3UQ5YihWkynONK9gaC+UVXjgPhnI8Gk=
 			</data>
 		</dict>
 		<key>Modules/CART.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D5gdlQyF43U9Tq+TUtKZVab2tdyNAJWTljIz5Rk0Luw=
+			brHWyOUVzbp7u8oMhyiCcIBJpvL1TIvtSgILUwhDsDc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
