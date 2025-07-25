@@ -15842,6 +15842,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CART",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "TokenLogic",
         "printedName": "TokenLogic",
@@ -15919,6 +15929,16 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CART",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -19722,7 +19742,8 @@
             "moduleName": "CART",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -19807,7 +19828,8 @@
             "moduleName": "CART",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -23990,64 +24012,36 @@
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Client\/V1\/BLEClientV1B2H.swift",
-      "kind": "StringLiteral",
-      "offset": 387,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Client\/V1\/BLEClientV1B2H.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1160,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Client\/V1\/BLEClientV1B2H.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1196,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Client\/V1\/BLEClientV1B2H.swift",
-      "kind": "StringLiteral",
-      "offset": 1224,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Client\/V1\/BLEClientV1B2H.swift",
       "kind": "BooleanLiteral",
-      "offset": 1656,
+      "offset": 1274,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Client\/V1\/BLEClientV1B2H.swift",
       "kind": "StringLiteral",
-      "offset": 5069,
+      "offset": 4675,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Client\/V1\/BLEClientV1B2H.swift",
       "kind": "StringLiteral",
-      "offset": 6565,
+      "offset": 6171,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Client\/V1\/BLEClientV1B2H.swift",
       "kind": "StringLiteral",
-      "offset": 18907,
+      "offset": 18490,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Client\/V1\/BLEClientV1B2H.swift",
       "kind": "StringLiteral",
-      "offset": 18931,
+      "offset": 18514,
       "length": 2,
       "value": "\"\""
     },
@@ -24110,21 +24104,21 @@
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Client\/V1\/BLEClientV1B2HP.swift",
       "kind": "StringLiteral",
-      "offset": 6676,
+      "offset": 6146,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Client\/V1\/BLEClientV1B2HP.swift",
       "kind": "StringLiteral",
-      "offset": 17469,
+      "offset": 16395,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/BLE\/Client\/V1\/BLEClientV1B2HP.swift",
       "kind": "StringLiteral",
-      "offset": 17493,
+      "offset": 16419,
       "length": 2,
       "value": "\"\""
     },
@@ -28156,56 +28150,56 @@
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2C\/B2CCalibrationRequestDTO.swift",
       "kind": "IntegerLiteral",
-      "offset": 583,
+      "offset": 783,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2C\/B2CCalibrationRequestDTO.swift",
       "kind": "StringLiteral",
-      "offset": 619,
+      "offset": 819,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2C\/B2CCalibrationRequestDTO.swift",
       "kind": "BooleanLiteral",
-      "offset": 647,
+      "offset": 847,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2C\/B2CCalibrationRequestDTO.swift",
       "kind": "IntegerLiteral",
-      "offset": 789,
+      "offset": 989,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2C\/B2CCalibrationRequestDTO.swift",
       "kind": "IntegerLiteral",
-      "offset": 793,
+      "offset": 993,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2C\/B2CCalibrationRequestDTO.swift",
       "kind": "IntegerLiteral",
-      "offset": 797,
+      "offset": 997,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2C\/B2CCalibrationRequestDTO.swift",
       "kind": "StringLiteral",
-      "offset": 950,
+      "offset": 1150,
       "length": 8,
       "value": "\"NRF_52\""
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2C\/B2CCalibrationRequestDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1391,
+      "offset": 1591,
       "length": 10,
       "value": "\"protocol\""
     },
@@ -28415,35 +28409,35 @@
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2H\/B2HCalibrationDataRequestDTO.swift",
       "kind": "IntegerLiteral",
-      "offset": 1225,
+      "offset": 1634,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2H\/B2HCalibrationDataRequestDTO.swift",
       "kind": "IntegerLiteral",
-      "offset": 1302,
+      "offset": 1711,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2H\/B2HCalibrationDataRequestDTO.swift",
       "kind": "IntegerLiteral",
-      "offset": 1306,
+      "offset": 1715,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2H\/B2HCalibrationDataRequestDTO.swift",
       "kind": "IntegerLiteral",
-      "offset": 1310,
+      "offset": 1719,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Data\/DTO\/RequestDTO\/B2H\/B2HCalibrationDataRequestDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2449,
+      "offset": 2858,
       "length": 10,
       "value": "\"protocol\""
     },
@@ -28933,77 +28927,77 @@
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 2796,
+      "offset": 2844,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 2857,
+      "offset": 2905,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 2911,
+      "offset": 2959,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3000,
+      "offset": 3048,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3069,
+      "offset": 3117,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3288,
+      "offset": 3336,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3311,
+      "offset": 3359,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3338,
+      "offset": 3386,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3361,
+      "offset": 3409,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3387,
+      "offset": 3435,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CARTDefs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3412,
+      "offset": 3460,
       "length": 2,
       "value": "-1"
     },
@@ -29470,9 +29464,51 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CalibrationStateEntity.swift",
+      "kind": "IntegerLiteral",
+      "offset": 271,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CalibrationStateEntity.swift",
+      "kind": "IntegerLiteral",
+      "offset": 450,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CalibrationStateEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 561,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CalibrationStateEntity.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1126,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CalibrationStateEntity.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1320,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/Entity\/CalibrationStateEntity.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1342,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/UseCase\/V1\/V1B2H\/CARTV1B2HUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 2374,
+      "offset": 2823,
       "length": 5,
       "value": "false"
     },
