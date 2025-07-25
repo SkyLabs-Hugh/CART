@@ -520,7 +520,7 @@ public class TokenLogic {
   @objc deinit
 }
 @objc public class CARTManager : ObjectiveC.NSObject, CART.CARTMangerServiceProtocol {
-  required public init(clientId: Swift.String? = nil, clientSecret: Swift.String? = nil, bleVersion: CART.CARTDefs.CARTProtocolVersion, cartListener: any CART.CARTListener, bizType: CART.BizType = .B2H(.NONE), bizSubType: CART.BizSubType = .NONE)
+  required public init(clientId: Swift.String? = nil, clientSecret: Swift.String? = nil, bleVersion: CART.CARTDefs.CARTProtocolVersion, cartListener: any CART.CARTListener, bizType: CART.BizType = .B2H(.NONE))
   public func setUserInfo(userKey: Swift.String, info: inout [Swift.String : Any?], listener: any CART.CARTUserListener)
   @objc deinit
 }

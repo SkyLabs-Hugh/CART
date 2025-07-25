@@ -3135,6 +3135,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CART",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Compression",
         "printedName": "Compression",
         "declKind": "Import",
@@ -16050,7 +16060,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(clientId:clientSecret:bleVersion:cartListener:bizType:bizSubType:)",
+            "printedName": "init(clientId:clientSecret:bleVersion:cartListener:bizType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -16106,18 +16116,11 @@
                 "printedName": "CART.BizType",
                 "hasDefaultArg": true,
                 "usr": "s:4CART7BizTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BizSubType",
-                "printedName": "CART.BizSubType",
-                "hasDefaultArg": true,
-                "usr": "s:4CART10BizSubTypeO"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:4CART11CARTManagerC8clientId0C6Secret10bleVersion12cartListener7bizType0j3SubK0ACSSSg_AjA8CARTDefsO012CARTProtocolG0OAA12CARTListener_pAA03BizK0OAA0plK0Otcfc",
-            "mangledName": "$s4CART11CARTManagerC8clientId0C6Secret10bleVersion12cartListener7bizType0j3SubK0ACSSSg_AjA8CARTDefsO012CARTProtocolG0OAA12CARTListener_pAA03BizK0OAA0plK0Otcfc",
+            "usr": "s:4CART11CARTManagerC8clientId0C6Secret10bleVersion12cartListener7bizTypeACSSSg_AiA8CARTDefsO012CARTProtocolG0OAA12CARTListener_pAA03BizK0Otcfc",
+            "mangledName": "$s4CART11CARTManagerC8clientId0C6Secret10bleVersion12cartListener7bizTypeACSSSg_AiA8CARTDefsO012CARTProtocolG0OAA12CARTListener_pAA03BizK0Otcfc",
             "moduleName": "CART",
             "declAttributes": [
               "Required",
@@ -29506,7 +29509,7 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/UseCase\/V1\/V1B2H\/CARTV1B2HUseCase.swift",
+      "filePath": "\/Users\/yeomsunghun\/Developer\/Company\/cartsdk_ios\/Projects\/CART\/Sources\/Domain\/UseCase\/V1\/CARTV1B2HUseCase.swift",
       "kind": "BooleanLiteral",
       "offset": 2823,
       "length": 5,
