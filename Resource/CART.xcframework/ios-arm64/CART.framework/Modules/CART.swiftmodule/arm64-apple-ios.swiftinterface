@@ -169,7 +169,7 @@ public class NetworkClient : CART.NetworkClientProtocol {
   @objc deinit
 }
 public struct B2CTokenProviderImp : CART.TokenProviderProtocol {
-  public init()
+  public init(cartAdminInfo: CART.CARTAdminInfo)
   public func getToken() -> Swift.String?
   public func getTokenHeaderKey() -> Swift.String
 }
@@ -228,7 +228,7 @@ public struct BackgroundBPDTO : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 final public class CARTAdminInfo : @unchecked Swift.Sendable {
-  public init()
+  public init(bizType: CART.BizType)
   @objc deinit
 }
 public enum CARTDefs {
@@ -514,14 +514,9 @@ public enum BizSubType : Swift.Equatable {
   public static var pro: CART.CARTDefs.CARTProtocolVersion
   @objc deinit
 }
-public class TokenLogic {
-  public init()
-  public func isTokenExpired(expiredAt: Swift.Double) -> Swift.Bool
-  @objc deinit
-}
 @objc public class CARTManager : ObjectiveC.NSObject, CART.CARTMangerServiceProtocol {
   required public init(clientId: Swift.String? = nil, clientSecret: Swift.String? = nil, bleVersion: CART.CARTDefs.CARTProtocolVersion, cartListener: any CART.CARTListener, bizType: CART.BizType = .B2H(.NONE))
-  public func setUserInfo(userKey: Swift.String, info: inout [Swift.String : Any?], listener: any CART.CARTUserListener)
+  public func setAuthInfo(userKey: Swift.String, info: inout [Swift.String : Any?], listener: any CART.CARTAuthListener)
   @objc deinit
 }
 extension CART.CARTManager {
@@ -536,7 +531,6 @@ extension CART.CARTManager {
 }
 extension CART.CARTManager {
   public func deviceInfo() -> CART.CARTDeviceInfo?
-  public func deviceInfoFromServer() -> CART.CARTDeviceInfo?
 }
 extension CART.CARTManager {
   public func stop()
@@ -565,7 +559,7 @@ extension CART.CARTManager {
   public func collectStop(listener: any CART.CARTCmdListener)
 }
 public protocol CARTMangerServiceProtocol : ObjectiveC.NSObject {
-  func setUserInfo(userKey: Swift.String, info: inout [Swift.String : Any?], listener: any CART.CARTUserListener)
+  func setAuthInfo(userKey: Swift.String, info: inout [Swift.String : Any?], listener: any CART.CARTAuthListener)
   func scanStart(listener: any CART.CARTScanListener)
   func scanStop()
   func connectSerial(serialId: Swift.String, isReg: Swift.Bool)
@@ -573,7 +567,6 @@ public protocol CARTMangerServiceProtocol : ObjectiveC.NSObject {
   func connect(cartName: Swift.String, isReg: Swift.Bool)
   func disConnect()
   func deviceInfo() -> CART.CARTDeviceInfo?
-  func deviceInfoFromServer() -> CART.CARTDeviceInfo?
   func stop()
   func batteryInfo(_ listener: (any CART.CARTBatteryListener)?)
   func systemStatus(listener: any CART.CARTStatusListener)
@@ -584,6 +577,9 @@ public protocol CARTMangerServiceProtocol : ObjectiveC.NSObject {
   func backgroundBP(listener: any CART.CARTBpListener, count: Swift.Int)
   func collectStart(listener: any CART.CARTCmdListener, time: Swift.Int, count: Swift.Int)
   func collectStop(listener: any CART.CARTCmdListener)
+}
+public protocol CARTAuthListener {
+  func authResult(success: Swift.Bool)
 }
 public protocol CARTBpListener {
   func bpCount(count: Swift.Int)
@@ -632,9 +628,6 @@ public protocol CARTScanListener {
 public protocol CARTStatusListener {
   func statusResult(success: Swift.Bool, status: CART.CARTStatus?, errorType: CART.CARTDefs.CARTErrorType?)
 }
-public protocol CARTUserListener {
-  func userResult(success: Swift.Bool)
-}
 public enum B2HUserInfoKey {
   public static let accessToken: Swift.String
   public static let cartNo: Swift.String
@@ -676,6 +669,8 @@ public struct CARTDeviceInfo : Swift.Codable {
   public var name: Swift.String
   public var macAddress: Swift.String
   public var serial: Swift.String
+  public var modelCode: Swift.String
+  public var clientSeq: Swift.Int
   public var currentFw: Swift.String
   public var size: Swift.Int
   public var defective: Swift.Bool
