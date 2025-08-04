@@ -82,8 +82,8 @@ public struct CARTInfo {
   public let rssi: Swift.String?
 }
 public enum CARTProtocol {
-  public struct TYPE : Swift.Equatable {
-    public static func == (a: CART.CARTProtocol.TYPE, b: CART.CARTProtocol.TYPE) -> Swift.Bool
+  public struct CommandTYPE : Swift.Equatable {
+    public static func == (a: CART.CARTProtocol.CommandTYPE, b: CART.CARTProtocol.CommandTYPE) -> Swift.Bool
   }
 }
 public enum CARTDataType : Swift.UInt8 {
@@ -114,6 +114,8 @@ public struct CARTSystemStatusModel {
   public var totalBgCount: Swift.Int {
     get
   }
+}
+public struct SystemDataCount {
 }
 public enum DataControlStatus {
   case START
@@ -282,6 +284,7 @@ public enum CARTDefs {
     case API_ERROR
     case HTTP_ERROR
     case ERROR_CODE
+    case DB_ERROR
     case WORK_IN_PROGRESS
     public init?(rawValue: Swift.Int)
     public typealias AllCases = [CART.CARTDefs.CARTErrorType]
@@ -515,7 +518,7 @@ public enum BizSubType : Swift.Equatable {
   @objc deinit
 }
 @objc public class CARTManager : ObjectiveC.NSObject, CART.CARTMangerServiceProtocol {
-  required public init(clientId: Swift.String? = nil, clientSecret: Swift.String? = nil, bleVersion: CART.CARTDefs.CARTProtocolVersion, cartListener: any CART.CARTListener, bizType: CART.BizType = .B2H(.NONE))
+  required public init(clientId: Swift.String? = nil, clientSecret: Swift.String? = nil, bleVersion: CART.CARTDefs.CARTProtocolVersion? = nil, cartListener: any CART.CARTListener, bizType: CART.BizType = .B2H(.NONE))
   public func setAuthInfo(userKey: Swift.String, info: inout [Swift.String : Any?], listener: any CART.CARTAuthListener)
   @objc deinit
 }
@@ -530,6 +533,9 @@ extension CART.CARTManager {
   public func disConnect()
 }
 extension CART.CARTManager {
+  public func backgroundStepSleep(listener: any CART.CARTAccListener, count: Swift.Int)
+}
+extension CART.CARTManager {
   public func deviceInfo() -> CART.CARTDeviceInfo?
 }
 extension CART.CARTManager {
@@ -540,6 +546,7 @@ extension CART.CARTManager {
 }
 extension CART.CARTManager {
   public func systemStatus(listener: any CART.CARTStatusListener)
+  public func systemDataCount(listener: any CART.CARTStatusListener)
 }
 extension CART.CARTManager {
   public func calibration(listener: any CART.CARTCalListener)
@@ -570,13 +577,22 @@ public protocol CARTMangerServiceProtocol : ObjectiveC.NSObject {
   func stop()
   func batteryInfo(_ listener: (any CART.CARTBatteryListener)?)
   func systemStatus(listener: any CART.CARTStatusListener)
+  func systemDataCount(listener: any CART.CARTStatusListener)
   func calibration(listener: any CART.CARTCalListener)
   func iss(issListener: any CART.CARTISSListener)
   func eventLog(listener: any CART.CARTLogListener)
   func bpStatus(listener: any CART.CARTStatusListener)
   func backgroundBP(listener: any CART.CARTBpListener, count: Swift.Int)
+  func backgroundStepSleep(listener: any CART.CARTAccListener, count: Swift.Int)
   func collectStart(listener: any CART.CARTCmdListener, time: Swift.Int, count: Swift.Int)
   func collectStop(listener: any CART.CARTCmdListener)
+}
+public protocol CARTAccListener {
+  func accCount(count: Swift.Int)
+  func accProgress(position: Swift.Int, max: Swift.Int)
+  func accResult(result: CART.CartAccResult)
+}
+public struct CartAccResult {
 }
 public protocol CARTAuthListener {
   func authResult(success: Swift.Bool)
@@ -705,6 +721,9 @@ public struct CARTStatus {
     get
   }
   public var logCount: Swift.Int {
+    get
+  }
+  public var accCount: Swift.Int {
     get
   }
   public var batteryLevel: Swift.Int {
